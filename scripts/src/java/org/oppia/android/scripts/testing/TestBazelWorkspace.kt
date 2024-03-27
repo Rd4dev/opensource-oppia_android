@@ -216,8 +216,8 @@ class TestBazelWorkspace(private val temporaryRootFolder: TemporaryFolder) {
         """
         load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-        RULES_JVM_EXTERNAL_TAG = "4.0"
-        RULES_JVM_EXTERNAL_SHA = "31701ad93dbfe544d597dbe62c9a1fdd76d81d8a9150c2bf1ecf928ecdf97169"
+        RULES_JVM_EXTERNAL_TAG = "6.0"
+        RULES_JVM_EXTERNAL_SHA = "c44568854d8bb92fe0f7dd6b1e8957ae65e45e32a058727fcf62aaafbd36f17b"
 
         http_archive(
             name = "rules_jvm_external",
@@ -246,7 +246,7 @@ class TestBazelWorkspace(private val temporaryRootFolder: TemporaryFolder) {
     if (!isConfiguredForKotlin) {
       // Add support for Kotlin: https://github.com/bazelbuild/rules_kotlin.
       val rulesKotlinReleaseUrl =
-        "https://github.com/bazelbuild/rules_kotlin/releases/download/v1.5.0-alpha-2" +
+        "https://github.com/bazelbuild/rules_kotlin/releases/download/v1.9.1" +
           "/rules_kotlin_release.tgz"
       val rulesKotlinArchiveName = "io_bazel_rules_kotlin"
       val rulesKotlinBazelPrefix = "@$rulesKotlinArchiveName//kotlin"
@@ -256,7 +256,7 @@ class TestBazelWorkspace(private val temporaryRootFolder: TemporaryFolder) {
         load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
         http_archive(
             name = "$rulesKotlinArchiveName",
-            sha256 = "6194a864280e1989b6d8118a4aee03bb50edeeae4076e5bc30eef8a98dcd4f07",
+            sha256 = "d9898c3250e0442436eeabde4e194c30d6c76a4a97f517b18cefdfd4e345725a",
             urls = ["$rulesKotlinReleaseUrl"],
         )
         load("$rulesKotlinBazelPrefix:dependencies.bzl", "kt_download_local_dev_dependencies")

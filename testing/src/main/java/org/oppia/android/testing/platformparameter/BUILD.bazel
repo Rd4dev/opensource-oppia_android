@@ -8,7 +8,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "test_constants",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestPlatformParameterConstants.kt",
     ],

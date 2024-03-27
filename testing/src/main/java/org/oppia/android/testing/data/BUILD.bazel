@@ -8,7 +8,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "async_result_subject",
-    testonly = True,
+#    testonly = False,
     srcs = [
         "AsyncResultSubject.kt",
     ],
@@ -23,7 +23,7 @@ kt_android_library(
 
 kt_android_library(
     name = "data_provider_test_monitor",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "DataProviderTestMonitor.kt",
     ],

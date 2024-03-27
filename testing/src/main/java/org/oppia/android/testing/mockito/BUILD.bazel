@@ -8,7 +8,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 # Library for general-purpose testing fakes.
 kt_android_library(
     name = "mockito",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "MockitoKotlinHelper.kt",
     ],

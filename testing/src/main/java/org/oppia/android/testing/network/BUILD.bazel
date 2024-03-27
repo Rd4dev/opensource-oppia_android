@@ -8,7 +8,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "network",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "MockClassroomService.kt",
         "MockConceptCardService.kt",
@@ -34,7 +34,7 @@ kt_android_library(
 
 kt_android_library(
     name = "impl",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "ApiMockLoader.kt",
     ],
@@ -45,7 +45,7 @@ kt_android_library(
 
 kt_android_library(
     name = "test_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "RetrofitTestModule.kt",
     ],

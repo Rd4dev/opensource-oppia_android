@@ -12,22 +12,94 @@ load("//third_party:versions.bzl", "HTTP_DEPENDENCY_VERSIONS", "get_maven_depend
 android_sdk_repository(
     name = "androidsdk",
     api_level = 33,
-    build_tools_version = "29.0.2",
+    build_tools_version = "33.0.0",
 )
 
 # Add support for JVM rules: https://github.com/bazelbuild/rules_jvm_external
+#http_archive(
+#    name = "rules_jvm_external",
+#    sha256 = HTTP_DEPENDENCY_VERSIONS["rules_jvm_external"]["sha"],
+#    strip_prefix = "rules_jvm_external-%s" % HTTP_DEPENDENCY_VERSIONS["rules_jvm_external"]["version"],
+#    url = "https://github.com/bazelbuild/rules_jvm_external/archive/%s.zip" % HTTP_DEPENDENCY_VERSIONS["rules_jvm_external"]["version"],
+#)
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+RULES_JVM_EXTERNAL_TAG = "6.0"
+RULES_JVM_EXTERNAL_SHA = "85fd6bad58ac76cc3a27c8e051e4255ff9ccd8c92ba879670d195622e7c0a9b7"
+
 http_archive(
     name = "rules_jvm_external",
-    sha256 = HTTP_DEPENDENCY_VERSIONS["rules_jvm"]["sha"],
-    strip_prefix = "rules_jvm_external-%s" % HTTP_DEPENDENCY_VERSIONS["rules_jvm"]["version"],
-    url = "https://github.com/bazelbuild/rules_jvm_external/archive/%s.zip" % HTTP_DEPENDENCY_VERSIONS["rules_jvm"]["version"],
+    strip_prefix = "rules_jvm_external-%s" % RULES_JVM_EXTERNAL_TAG,
+    sha256 = RULES_JVM_EXTERNAL_SHA,
+    url = "https://github.com/bazelbuild/rules_jvm_external/releases/download/%s/rules_jvm_external-%s.tar.gz" % (RULES_JVM_EXTERNAL_TAG, RULES_JVM_EXTERNAL_TAG)
 )
+
+load("@rules_jvm_external//:repositories.bzl", "rules_jvm_external_deps")
+
+rules_jvm_external_deps()
+
+load("@rules_jvm_external//:setup.bzl", "rules_jvm_external_setup")
+
+rules_jvm_external_setup()
+
+# bazel-skylib
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "bazel_skylib",
+    sha256 = "cd55a062e763b9349921f0f5db8c3933288dc8ba4f76dd9416aac68acee3cb94",
+    urls = [
+        "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/releases/download/1.5.0/bazel-skylib-1.5.0.tar.gz",
+        "https://github.com/bazelbuild/bazel-skylib/releases/download/1.5.0/bazel-skylib-1.5.0.tar.gz",
+    ],
+)
+
+load("@bazel_skylib//:workspace.bzl", "bazel_skylib_workspace")
+
+bazel_skylib_workspace()
+
+# The rules_java contains the java_lite_proto_library rule used in the model module.
+http_archive(
+    name = "rules_java",
+    sha256 = HTTP_DEPENDENCY_VERSIONS["rules_java"]["sha"],
+    url = "https://github.com/bazelbuild/rules_java/releases/download/{0}/rules_java-{0}.tar.gz".format(HTTP_DEPENDENCY_VERSIONS["rules_java"]["version"]),
+)
+
+load("@rules_java//java:repositories.bzl", "rules_java_dependencies", "rules_java_toolchains")
+
+rules_java_dependencies()
+
+rules_java_toolchains()
+
+# Add rules_android
+#load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+# Or a later commit
+#RULES_ANDROID_COMMIT= "0bf3093bd011acd35de3c479c8990dd630d552aa"
+#RULES_ANDROID_SHA = "b75a673a66c157138ab53f4d8612a6e655d38b69bb14207c1a6675f0e10afa61"
+#http_archive(
+#    name = "rules_android",
+#    url = "https://github.com/bazelbuild/rules_android/archive/refs/tags/v0.1.1.zip",
+#    sha256 = RULES_ANDROID_SHA,
+##    strip_prefix = "",
+#    strip_prefix = "rules_android-%s" % RULES_ANDROID_COMMIT,
+#)
+#load("@rules_android//:prereqs.bzl", "rules_android_prereqs")
+#rules_android_prereqs()
+#load("@rules_android//:defs.bzl", "rules_android_workspace")
+#rules_android_workspace()
+
+#register_toolchains(
+#    "@rules_android//toolchains/android:android_default_toolchain",
+#    "@rules_android//toolchains/android_sdk:android_sdk_tools",
+#)
 
 # Add support for Kotlin: https://github.com/bazelbuild/rules_kotlin.
 http_archive(
     name = "io_bazel_rules_kotlin",
     sha256 = HTTP_DEPENDENCY_VERSIONS["rules_kotlin"]["sha"],
-    urls = ["https://github.com/bazelbuild/rules_kotlin/releases/download/%s/rules_kotlin_release.tgz" % HTTP_DEPENDENCY_VERSIONS["rules_kotlin"]["version"]],
+    urls = ["https://github.com/bazelbuild/rules_kotlin/releases/download/v1.9.0/rules_kotlin-v1.9.0.tar.gz"],
 )
 
 # TODO(#1535): Remove once rules_kotlin is released because these lines become unnecessary
@@ -35,11 +107,11 @@ load("@io_bazel_rules_kotlin//kotlin:dependencies.bzl", "kt_download_local_dev_d
 
 kt_download_local_dev_dependencies()
 
-load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kotlin_repositories", "kt_register_toolchains")
+load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
+kotlin_repositories() # if you want the default. Otherwise see custom kotlinc distribution below
 
-kotlin_repositories()
-
-kt_register_toolchains()
+load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
+kt_register_toolchains() # to use the default toolchain, otherwise see toolchains below
 
 # The proto_compiler and proto_java_toolchain bindings load the protos rules needed for the model
 # module while helping us avoid the unnecessary compilation of protoc. Referecences:
@@ -56,31 +128,32 @@ bind(
     actual = "//tools:java_toolchain",
 )
 
-# The rules_java contains the java_lite_proto_library rule used in the model module.
-http_archive(
-    name = "rules_java",
-    sha256 = HTTP_DEPENDENCY_VERSIONS["rules_java"]["sha"],
-    url = "https://github.com/bazelbuild/rules_java/releases/download/{0}/rules_java-{0}.tar.gz".format(HTTP_DEPENDENCY_VERSIONS["rules_java"]["version"]),
-)
-
-load("@rules_java//java:repositories.bzl", "rules_java_dependencies", "rules_java_toolchains")
-
-rules_java_dependencies()
-
-rules_java_toolchains()
-
 # The rules_proto contains the proto_library rule used in the model module.
+#http_archive(
+#    name = "rules_proto",
+#    sha256 = HTTP_DEPENDENCY_VERSIONS["rules_proto"]["sha"],
+#    strip_prefix = "rules_proto-%s" % HTTP_DEPENDENCY_VERSIONS["rules_proto"]["version"],
+#    urls = ["https://github.com/bazelbuild/rules_proto/archive/%s.tar.gz" % HTTP_DEPENDENCY_VERSIONS["rules_proto"]["version"]],
+#)
+#
+#load("@rules_proto//proto:repositories.bzl", "rules_proto_dependencies")
+#rules_proto_dependencies()
+#
+#load("@rules_proto//proto:toolchains.bzl", "rules_proto_toolchains")
+#rules_proto_toolchains()
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
 http_archive(
     name = "rules_proto",
-    sha256 = HTTP_DEPENDENCY_VERSIONS["rules_proto"]["sha"],
-    strip_prefix = "rules_proto-%s" % HTTP_DEPENDENCY_VERSIONS["rules_proto"]["version"],
-    urls = ["https://github.com/bazelbuild/rules_proto/archive/%s.tar.gz" % HTTP_DEPENDENCY_VERSIONS["rules_proto"]["version"]],
+    sha256 = "80d3a4ec17354cccc898bfe32118edd934f851b03029d63ef3fc7c8663a7415c",
+    strip_prefix = "rules_proto-5.3.0-21.5",
+    urls = [
+        "https://github.com/bazelbuild/rules_proto/archive/refs/tags/5.3.0-21.5.tar.gz",
+    ],
 )
-
 load("@rules_proto//proto:repositories.bzl", "rules_proto_dependencies", "rules_proto_toolchains")
-
 rules_proto_dependencies()
-
 rules_proto_toolchains()
 
 # Add support for Dagger
@@ -126,7 +199,7 @@ git_repository(
 
 git_repository(
     name = "android-spotlight",
-    commit = "ebde38335bfb56349eae57e705b611ead9addb15",
+    commit = "cc23499d37dc8533a2876e45b5063e981a4583f4",
     remote = "https://github.com/oppia/android-spotlight",
     shallow_since = "1668824029 -0800",
 )
@@ -135,7 +208,7 @@ git_repository(
 # min target SDK version to be compatible with Oppia.
 git_repository(
     name = "kotlitex",
-    commit = "43139c140833c7120f351d63d74b42c253d2b213",
+    commit = "ccdf4170817fa3b48b8e1e452772dd58ecb71cf2",
     remote = "https://github.com/oppia/kotlitex",
     shallow_since = "1647554845 -0700",
 )
@@ -178,7 +251,7 @@ http_jar(
 # Note to developers: new dependencies should be added to //third_party:versions.bzl, not here.
 maven_install(
     artifacts = DAGGER_ARTIFACTS + get_maven_dependencies(),
-    fail_if_repin_required = True,
+    fail_if_repin_required = False,
     fetch_sources = True,
     maven_install_json = "//third_party:maven_install.json",
     repositories = DAGGER_REPOSITORIES + [

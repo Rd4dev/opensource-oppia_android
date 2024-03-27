@@ -9,7 +9,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "fake_oppia_clock",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "FakeOppiaClock.kt",
     ],
@@ -22,7 +22,7 @@ kt_android_library(
 
 kt_android_library(
     name = "fake_system_clock",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "FakeSystemClock.kt",
     ],
@@ -35,7 +35,7 @@ kt_android_library(
 
 kt_android_library(
     name = "test_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "FakeOppiaClockModule.kt",
     ],

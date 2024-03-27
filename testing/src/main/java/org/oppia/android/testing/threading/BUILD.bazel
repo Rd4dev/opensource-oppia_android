@@ -9,7 +9,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "annotations",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "BackgroundTestDispatcher.kt",
         "BlockingTestDispatcher.kt",
@@ -25,7 +25,7 @@ kt_android_library(
 # instead.
 kt_android_library(
     name = "test_coroutine_dispatcher",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestCoroutineDispatcher.kt",
     ],
@@ -39,7 +39,7 @@ kt_android_library(
 
 kt_android_library(
     name = "test_coroutine_dispatchers",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestCoroutineDispatchers.kt",
     ],
@@ -48,7 +48,7 @@ kt_android_library(
 
 kt_android_library(
     name = "robolectric_impl",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestCoroutineDispatcherRobolectricImpl.kt",
         "TestCoroutineDispatchersRobolectricImpl.kt",
@@ -65,7 +65,7 @@ kt_android_library(
 
 kt_android_library(
     name = "espresso_impl",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestCoroutineDispatcherEspressoImpl.kt",
         "TestCoroutineDispatchersEspressoImpl.kt",
@@ -98,7 +98,7 @@ kt_android_library(
 
 kt_android_library(
     name = "test_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestDispatcherModule.kt",
     ],

@@ -24,7 +24,7 @@ MIGRATED_PROD_FILES = glob([
 # Library for general-purpose testing fakes.
 kt_android_library(
     name = "testing",
-    testonly = True,
+#    testonly = True,
     srcs = glob(
         ["src/main/java/org/oppia/android/testing/**/*.kt"],
         exclude = MIGRATED_PROD_FILES,
@@ -151,7 +151,7 @@ MIGRATED_TESTS = glob([
 
 kt_android_library(
     name = "assertion_helpers",
-    testonly = True,
+#    testonly = True,
     srcs = ["src/main/java/org/oppia/android/testing/AssertionHelpers.kt"],
     visibility = ["//visibility:public"],
     deps = ["//third_party:junit_junit"],

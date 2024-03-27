@@ -49,6 +49,7 @@ oppia_android_test(
 oppia_android_test(
     name = "LocaleProdModuleTest",
     srcs = ["LocaleProdModuleTest.kt"],
+    testonly = True,
     custom_package = "org.oppia.android.util.locale",
     test_class = "org.oppia.android.util.locale.LocaleProdModuleTest",
     test_manifest = "//utility:test_manifest",

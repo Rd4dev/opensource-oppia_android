@@ -233,6 +233,7 @@ oppia_android_test(
 oppia_android_test(
     name = "MathTokenizerTest",
     srcs = ["MathTokenizerTest.kt"],
+    testonly = True,
     custom_package = "org.oppia.android.util.math",
     test_class = "org.oppia.android.util.math.MathTokenizerTest",
     test_manifest = "//utility:test_manifest",

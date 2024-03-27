@@ -133,16 +133,16 @@ HTTP_DEPENDENCY_VERSIONS = {
         "version": "3.11.0",
     },
     "rules_java": {
-        "sha": "34b41ec683e67253043ab1a3d1e8b7c61e4e8edefbcad485381328c934d072fe",
-        "version": "4.0.0",
+        "sha": "c73336802d0b4882e40770666ad055212df4ea62cfa6edf9cb0f9d29828a0934",
+        "version": "5.3.5",
     },
-    "rules_jvm": {
-        "sha": "f36441aa876c4f6427bfb2d1f2d723b48e9d930b62662bf723ddfb8fc80f0140",
-        "version": "4.1",
+    "rules_jvm_external": {
+        "sha": "85fd6bad58ac76cc3a27c8e051e4255ff9ccd8c92ba879670d195622e7c0a9b7",
+        "version": "6.0",
     },
     "rules_kotlin": {
-        "sha": "6194a864280e1989b6d8118a4aee03bb50edeeae4076e5bc30eef8a98dcd4f07",
-        "version": "v1.5.0-alpha-2",
+        "sha": "5766f1e599acf551aa56f49dab9ab9108269b03c557496c54acaf41f98e2b8d6",
+        "version": "v1.9.0",
     },
     "rules_proto": {
         "sha": "e0cab008a9cdc2400a1d6572167bf9c5afc72e19ee2b862d18581051efab42c9",

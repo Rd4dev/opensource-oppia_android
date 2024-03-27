@@ -7,7 +7,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "test_authentication_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "FakeFirebaseAuthWrapperImpl.kt",
         "TestAuthenticationModule.kt",
