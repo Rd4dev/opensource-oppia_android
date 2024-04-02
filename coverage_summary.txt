@@ -1,0 +1,5 @@
+Reading tracefile bazel-out/k8-fastbuild/testlogs/utility/src/test/java/org/oppia/android/util/math/MathExpressionParserTest/coverage.dat
+Summary coverage rate:
+  lines......: 46.7% (772 of 1654 lines)
+  functions..: 63.4% (294 of 464 functions)
+  branches...: no data found
