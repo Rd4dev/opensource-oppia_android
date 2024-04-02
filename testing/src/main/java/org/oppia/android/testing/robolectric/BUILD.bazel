@@ -35,7 +35,7 @@ kt_android_library(
 # codebase.
 kt_android_library(
     name = "shadow_bidi_formatter",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "ShadowBidiFormatter.kt",
     ],

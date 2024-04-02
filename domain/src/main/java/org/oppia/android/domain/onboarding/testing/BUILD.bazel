@@ -7,7 +7,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "retriever_test_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "ExpirationMetaDataRetrieverTestModule.kt",
     ],
@@ -21,7 +21,7 @@ kt_android_library(
 
 kt_android_library(
     name = "fake_exploration_meta_data_retriever",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "FakeExpirationMetaDataRetriever.kt",
     ],

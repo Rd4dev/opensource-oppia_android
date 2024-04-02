@@ -7,7 +7,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "test_oppia_bidi_formatter",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestOppiaBidiFormatter.kt",
     ],
@@ -21,7 +21,7 @@ kt_android_library(
 
 kt_android_library(
     name = "test_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "LocaleTestModule.kt",
     ],

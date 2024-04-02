@@ -33,7 +33,7 @@ kt_android_library(
 
 kt_android_library(
     name = "oppia_parameterized_test_runner",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "OppiaParameterizedTestRunner.kt",
     ],
@@ -76,7 +76,7 @@ kt_android_library(
 
 kt_android_library(
     name = "parameterized_junit_test_runner",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "ParameterizedJunitTestRunner.kt",
     ],
@@ -89,7 +89,7 @@ kt_android_library(
 
 kt_android_library(
     name = "parameterized_robolectric_test_runner",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "ParameterizedRobolectricTestRunner.kt",
     ],
@@ -103,7 +103,7 @@ kt_android_library(
 
 kt_android_library(
     name = "parameterized_runner_delegate_impl",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "OppiaParameterizedBaseRunner.kt",
         "ParameterValue.kt",

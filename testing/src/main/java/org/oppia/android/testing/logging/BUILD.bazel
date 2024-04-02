@@ -21,7 +21,7 @@ kt_android_library(
 
 kt_android_library(
     name = "test_sync_status_manager",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestSyncStatusManager.kt",
     ],
@@ -35,7 +35,7 @@ kt_android_library(
 
 kt_android_library(
     name = "sync_status_test_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "SyncStatusTestModule.kt",
     ],

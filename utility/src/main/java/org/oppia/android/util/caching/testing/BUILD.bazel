@@ -21,7 +21,7 @@ kt_android_library(
 
 kt_android_library(
     name = "asset_test_no_op_module",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "AssetTestNoOpModule.kt",
     ],
@@ -49,7 +49,7 @@ kt_android_library(
 
 kt_android_library(
     name = "test_asset_repository",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TestNoOpAssetRepository.kt",
     ],

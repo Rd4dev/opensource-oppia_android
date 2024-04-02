@@ -568,8 +568,8 @@ maven_dependency {
   }
 }
 maven_dependency {
-  artifact_name: "com.google.dagger:dagger:2.28.1"
-  artifact_version: "2.28.1"
+  artifact_name: "com.google.dagger:dagger:2.48"
+  artifact_version: "2.48"
   license {
     license_name: "Apache 2.0"
     original_link: "https://www.apache.org/licenses/LICENSE-2.0.txt"

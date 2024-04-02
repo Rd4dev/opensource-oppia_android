@@ -8,7 +8,7 @@ load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kt_android_library")
 
 kt_android_library(
     name = "comparable_operation_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "ComparableOperationSubject.kt",
     ],
@@ -25,7 +25,7 @@ kt_android_library(
 
 kt_android_library(
     name = "fraction_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "FractionSubject.kt",
     ],
@@ -42,7 +42,7 @@ kt_android_library(
 
 kt_android_library(
     name = "math_equation_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "MathEquationSubject.kt",
     ],
@@ -59,7 +59,7 @@ kt_android_library(
 
 kt_android_library(
     name = "math_expression_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "MathExpressionSubject.kt",
     ],
@@ -76,7 +76,7 @@ kt_android_library(
 
 kt_android_library(
     name = "math_parsing_error_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "MathParsingErrorSubject.kt",
     ],
@@ -93,7 +93,7 @@ kt_android_library(
 
 kt_android_library(
     name = "polynomial_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "PolynomialSubject.kt",
     ],
@@ -111,7 +111,7 @@ kt_android_library(
 
 kt_android_library(
     name = "real_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "RealSubject.kt",
     ],
@@ -128,7 +128,7 @@ kt_android_library(
 
 kt_android_library(
     name = "token_subject",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "TokenSubject.kt",
     ],

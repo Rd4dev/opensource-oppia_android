@@ -82,7 +82,7 @@ kt_android_library(
 # use.
 kt_android_library(
     name = "coroutine_executor_service",
-    testonly = True,
+#    testonly = True,
     srcs = [
         "CoroutineExecutorService.kt",
     ],

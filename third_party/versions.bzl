@@ -66,8 +66,8 @@ MAVEN_PRODUCTION_DEPENDENCY_VERSIONS = {
     "com.google.gms:google-services": "4.3.3",
     "com.google.guava:guava": "28.1-android",
     "com.google.protobuf:protobuf-javalite": "3.17.3",
-    "com.squareup.moshi:moshi-kotlin": "1.11.0",
-    "com.squareup.moshi:moshi-kotlin-codegen": "1.11.0",
+    "com.squareup.moshi:moshi-kotlin": "1.15.0",
+    "com.squareup.moshi:moshi-kotlin-codegen": "1.15.0",
     "com.squareup.okhttp3:okhttp": "4.7.2",
     "com.squareup.retrofit2:converter-moshi": "2.5.0",
     "com.squareup.retrofit2:retrofit": "2.9.0",
@@ -80,6 +80,7 @@ MAVEN_PRODUCTION_DEPENDENCY_VERSIONS = {
     "org.jetbrains.kotlinx:kotlinx-coroutines-android": "1.4.1",
     "org.jetbrains.kotlinx:kotlinx-coroutines-core": "1.4.3",
     "org.jetbrains:annotations:jar": "13.0",
+    "org.jetbrains.kotlinx:kotlinx-metadata-jvm": "0.5.0",
 }
 
 # Note to developers: Please keep this dict sorted by key to make it easier to find dependencies.
@@ -126,15 +127,15 @@ HTTP_DEPENDENCY_VERSIONS = {
         "version": "1.8.0",
     },
     "dagger": {
-        "sha": "9e69ab2f9a47e0f74e71fe49098bea908c528aa02fa0c5995334447b310d0cdd",
-        "version": "2.28.1",
+        "sha": "5f9d43b9a7d940a44ca9d5f4e08758b6141e7cb57ac0a2b8bbab02c9ba554c0e",
+        "version": "2.48",
     },
     "protobuf_tools": {
         "version": "3.11.0",
     },
     "rules_java": {
-        "sha": "c73336802d0b4882e40770666ad055212df4ea62cfa6edf9cb0f9d29828a0934",
-        "version": "5.3.5",
+        "sha": "4018e97c93f97680f1650ffd2a7530245b864ac543fd24fae8c02ba447cb2864",
+        "version": "7.3.1",
     },
     "rules_jvm_external": {
         "sha": "85fd6bad58ac76cc3a27c8e051e4255ff9ccd8c92ba879670d195622e7c0a9b7",
