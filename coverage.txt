@@ -1,0 +1,3775 @@
+SF:utility/src/main/java/org/oppia/android/util/math/ComparableOperationExtensions.kt
+FN:43,org/oppia/android/util/math/ComparableOperationExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation;Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation;)Z
+FN:53,org/oppia/android/util/math/ComparableOperationExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/ComparableOperation$NonCommutativeOperation;Lorg/oppia/android/app/model/ComparableOperation$NonCommutativeOperation;)Z
+FN:24,org/oppia/android/util/math/ComparableOperationExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/ComparableOperation;Lorg/oppia/android/app/model/ComparableOperation;)Z
+FNDA:0,org/oppia/android/util/math/ComparableOperationExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation;Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation;)Z
+FNDA:0,org/oppia/android/util/math/ComparableOperationExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/ComparableOperation$NonCommutativeOperation;Lorg/oppia/android/app/model/ComparableOperation$NonCommutativeOperation;)Z
+FNDA:0,org/oppia/android/util/math/ComparableOperationExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/ComparableOperation;Lorg/oppia/android/app/model/ComparableOperation;)Z
+FNF:3
+FNH:0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:30,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:53,0
+DA:54,0
+DA:56,0
+DA:57,0
+DA:59,0
+DA:60,0
+LH:0
+LF:20
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/ComparatorExtensions.kt
+FN:17,org/oppia/android/util/math/ComparatorExtensionsKt::compareIterables (Ljava/util/Comparator;Ljava/lang/Iterable;Ljava/lang/Iterable;)I
+FN:40,org/oppia/android/util/math/ComparatorExtensionsKt::compareIterablesInternal (Ljava/util/Comparator;Ljava/lang/Iterable;Ljava/lang/Iterable;Z)I
+FN:31,org/oppia/android/util/math/ComparatorExtensionsKt::compareIterablesReversed (Ljava/util/Comparator;Ljava/lang/Iterable;Ljava/lang/Iterable;)I
+FN:66,org/oppia/android/util/math/ComparatorExtensionsKt::compareProtos (Ljava/util/Comparator;Lcom/google/protobuf/MessageLite;Lcom/google/protobuf/MessageLite;)I
+FNDA:0,org/oppia/android/util/math/ComparatorExtensionsKt::compareIterables (Ljava/util/Comparator;Ljava/lang/Iterable;Ljava/lang/Iterable;)I
+FNDA:0,org/oppia/android/util/math/ComparatorExtensionsKt::compareIterablesInternal (Ljava/util/Comparator;Ljava/lang/Iterable;Ljava/lang/Iterable;Z)I
+FNDA:0,org/oppia/android/util/math/ComparatorExtensionsKt::compareIterablesReversed (Ljava/util/Comparator;Ljava/lang/Iterable;Ljava/lang/Iterable;)I
+FNDA:0,org/oppia/android/util/math/ComparatorExtensionsKt::compareProtos (Ljava/util/Comparator;Lcom/google/protobuf/MessageLite;Lcom/google/protobuf/MessageLite;)I
+FNF:4
+FNH:0
+DA:17,0
+DA:31,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+LH:0
+LF:20
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/ExpressionToComparableOperationConverter.kt
+FN:37,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion$COMPARABLE_OPERATION_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FN:165,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::addOperationToProduct (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation$Builder;Lorg/oppia/android/app/model/MathExpression;ZZ)I
+FN:123,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::addOperationToSum (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation$Builder;Lorg/oppia/android/app/model/MathExpression;Z)V
+FN:54,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::convertToComparableOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/ComparableOperation;
+FN:283,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createBinaryOperationComparator ()Ljava/util/Comparator;
+FN:264,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createCommutativeAccumulationComparator ()Ljava/util/Comparator;
+FN:248,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createComparableOperationComparator ()Ljava/util/Comparator;
+FN:273,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createNonCommutativeOperationComparator ()Ljava/util/Comparator;
+FN:37,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::getCOMPARABLE_OPERATION_COMPARATOR ()Ljava/util/Comparator;
+FN:239,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::invertInverted (Lorg/oppia/android/app/model/ComparableOperation;)Lorg/oppia/android/app/model/ComparableOperation;
+FN:236,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::invertNegation (Lorg/oppia/android/app/model/ComparableOperation;)Lorg/oppia/android/app/model/ComparableOperation;
+FN:233,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::makePositive (Lorg/oppia/android/app/model/ComparableOperation;)Lorg/oppia/android/app/model/ComparableOperation;
+FN:210,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::sort (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation$Builder;)V
+FN:220,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::toNonCommutativeOperation (Lorg/oppia/android/app/model/MathExpression;Lkotlin/jvm/functions/Function2;)Lorg/oppia/android/app/model/ComparableOperation;
+FN:103,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::toProduct (Lorg/oppia/android/app/model/MathExpression;Z)Lorg/oppia/android/app/model/ComparableOperation;
+FN:92,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::toSummation (Lorg/oppia/android/app/model/MathExpression;Z)Lorg/oppia/android/app/model/ComparableOperation;
+FN:37,org/oppia/android/util/math/ExpressionToComparableOperationConverter::<clinit> ()V
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion$COMPARABLE_OPERATION_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::addOperationToProduct (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation$Builder;Lorg/oppia/android/app/model/MathExpression;ZZ)I
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::addOperationToSum (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation$Builder;Lorg/oppia/android/app/model/MathExpression;Z)V
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::convertToComparableOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createBinaryOperationComparator ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createCommutativeAccumulationComparator ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createComparableOperationComparator ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::createNonCommutativeOperationComparator ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::getCOMPARABLE_OPERATION_COMPARATOR ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::invertInverted (Lorg/oppia/android/app/model/ComparableOperation;)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::invertNegation (Lorg/oppia/android/app/model/ComparableOperation;)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::makePositive (Lorg/oppia/android/app/model/ComparableOperation;)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::sort (Lorg/oppia/android/app/model/ComparableOperation$CommutativeAccumulation$Builder;)V
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::toNonCommutativeOperation (Lorg/oppia/android/app/model/MathExpression;Lkotlin/jvm/functions/Function2;)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::toProduct (Lorg/oppia/android/app/model/MathExpression;Z)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter$Companion::toSummation (Lorg/oppia/android/app/model/MathExpression;Z)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/ExpressionToComparableOperationConverter::<clinit> ()V
+FNF:17
+FNH:0
+DA:37,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:67,0
+DA:69,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:84,0
+DA:86,0
+DA:87,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:123,0
+DA:124,0
+DA:126,0
+DA:127,0
+DA:129,0
+DA:132,0
+DA:133,0
+DA:135,0
+DA:136,0
+DA:138,0
+DA:139,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:146,0
+DA:165,0
+DA:166,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:175,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:184,0
+DA:185,0
+DA:187,0
+DA:188,0
+DA:190,0
+DA:191,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:228,0
+DA:229,0
+DA:233,0
+DA:236,0
+DA:239,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:254,0
+DA:257,0
+DA:260,0
+DA:264,0
+DA:265,0
+DA:273,0
+DA:274,0
+DA:276,0
+DA:283,0
+DA:284,0
+DA:286,0
+LH:0
+LF:121
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/ExpressionToLatexConverter.kt
+FN:103,org/oppia/android/util/math/ExpressionToLatexConverter$Companion::convertToLatex (Lorg/oppia/android/app/model/MathEquation;Z)Ljava/lang/String;
+FN:53,org/oppia/android/util/math/ExpressionToLatexConverter$Companion::convertToLatex (Lorg/oppia/android/app/model/MathExpression;Z)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/ExpressionToLatexConverter$Companion::convertToLatex (Lorg/oppia/android/app/model/MathEquation;Z)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/ExpressionToLatexConverter$Companion::convertToLatex (Lorg/oppia/android/app/model/MathExpression;Z)Ljava/lang/String;
+FNF:2
+FNH:0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:71,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:80,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:88,0
+DA:91,0
+DA:92,0
+DA:103,0
+DA:104,0
+DA:105,0
+LH:0
+LF:30
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/ExpressionToPolynomialConverter.kt
+FN:162,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::createConstantPolynomial (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Polynomial;
+FN:165,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::createSingleTermPolynomial (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial;
+FN:148,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::createSingleVariablePolynomial (Ljava/lang/String;)Lorg/oppia/android/app/model/Polynomial;
+FN:127,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomial (Lorg/oppia/android/app/model/MathBinaryOperation;)Lorg/oppia/android/app/model/Polynomial;
+FN:75,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomial (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Polynomial;
+FN:140,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomial (Lorg/oppia/android/app/model/MathUnaryOperation;)Lorg/oppia/android/app/model/Polynomial;
+FN:116,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomialAux (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Polynomial;
+FN:83,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::replaceSquareRoots (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::createConstantPolynomial (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::createSingleTermPolynomial (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::createSingleVariablePolynomial (Ljava/lang/String;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomial (Lorg/oppia/android/app/model/MathBinaryOperation;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomial (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomial (Lorg/oppia/android/app/model/MathUnaryOperation;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::reduceToPolynomialAux (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/ExpressionToPolynomialConverter$Companion::replaceSquareRoots (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNF:8
+FNH:0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:110,0
+DA:111,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:122,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:157,0
+DA:162,0
+DA:165,0
+LH:0
+LF:60
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/FloatExtensions.kt
+FN:36,org/oppia/android/util/math/FloatExtensionsKt::isApproximatelyEqualTo (DD)Z
+FN:28,org/oppia/android/util/math/FloatExtensionsKt::isApproximatelyEqualTo (FF)Z
+FN:43,org/oppia/android/util/math/FloatExtensionsKt::toPlainString (D)Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/FloatExtensionsKt::isApproximatelyEqualTo (DD)Z
+FNDA:0,org/oppia/android/util/math/FloatExtensionsKt::isApproximatelyEqualTo (FF)Z
+FNDA:0,org/oppia/android/util/math/FloatExtensionsKt::toPlainString (D)Ljava/lang/String;
+FNF:3
+FNH:1
+BRDA:28,0,0,-
+BRDA:28,0,1,-
+BRDA:36,0,0,1
+BRDA:36,0,1,0
+BRF:4
+BRH:1
+DA:28,0
+DA:36,1
+DA:43,0
+LH:1
+LF:3
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/FractionExtensions.kt
+FN:190,org/oppia/android/util/math/FractionExtensionsKt::div (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:243,org/oppia/android/util/math/FractionExtensionsKt::gcd (II)I
+FN:9,org/oppia/android/util/math/FractionExtensionsKt::hasFractionalPart (Lorg/oppia/android/app/model/Fraction;)Z
+FN:19,org/oppia/android/util/math/FractionExtensionsKt::isOnlyWholeNumber (Lorg/oppia/android/app/model/Fraction;)Z
+FN:249,org/oppia/android/util/math/FractionExtensionsKt::lcm (II)I
+FN:165,org/oppia/android/util/math/FractionExtensionsKt::minus (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:128,org/oppia/android/util/math/FractionExtensionsKt::plus (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:212,org/oppia/android/util/math/FractionExtensionsKt::pow (Lorg/oppia/android/app/model/Fraction;I)Lorg/oppia/android/app/model/Fraction;
+FN:171,org/oppia/android/util/math/FractionExtensionsKt::times (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:44,org/oppia/android/util/math/FractionExtensionsKt::toAnswerString (Lorg/oppia/android/app/model/Fraction;)Ljava/lang/String;
+FN:34,org/oppia/android/util/math/FractionExtensionsKt::toDouble (Lorg/oppia/android/app/model/Fraction;)D
+FN:103,org/oppia/android/util/math/FractionExtensionsKt::toImproperForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:112,org/oppia/android/util/math/FractionExtensionsKt::toInvertedImproperForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:90,org/oppia/android/util/math/FractionExtensionsKt::toProperForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:75,org/oppia/android/util/math/FractionExtensionsKt::toSimplestForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FN:26,org/oppia/android/util/math/FractionExtensionsKt::toWholeNumber (Lorg/oppia/android/app/model/Fraction;)I
+FN:232,org/oppia/android/util/math/FractionExtensionsKt::toWholeNumberFraction (I)Lorg/oppia/android/app/model/Fraction;
+FN:122,org/oppia/android/util/math/FractionExtensionsKt::unaryMinus (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::div (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::gcd (II)I
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::hasFractionalPart (Lorg/oppia/android/app/model/Fraction;)Z
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::isOnlyWholeNumber (Lorg/oppia/android/app/model/Fraction;)Z
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::lcm (II)I
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::minus (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::plus (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::pow (Lorg/oppia/android/app/model/Fraction;I)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::times (Lorg/oppia/android/app/model/Fraction;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toAnswerString (Lorg/oppia/android/app/model/Fraction;)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toDouble (Lorg/oppia/android/app/model/Fraction;)D
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toImproperForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toInvertedImproperForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toProperForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toSimplestForm (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toWholeNumber (Lorg/oppia/android/app/model/Fraction;)I
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::toWholeNumberFraction (I)Lorg/oppia/android/app/model/Fraction;
+FNDA:0,org/oppia/android/util/math/FractionExtensionsKt::unaryMinus (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Fraction;
+FNF:18
+FNH:0
+DA:9,0
+DA:19,0
+DA:26,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:60,0
+DA:61,0
+DA:63,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:122,0
+DA:128,0
+DA:129,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:165,0
+DA:171,0
+DA:172,0
+DA:175,0
+DA:176,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:190,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:219,0
+DA:221,0
+DA:223,0
+DA:224,0
+DA:225,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:243,0
+DA:249,0
+LH:0
+LF:92
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/MathExpressionExtensions.kt
+FN:41,org/oppia/android/util/math/MathExpressionExtensionsKt::evaluateAsNumericExpression (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Real;
+FN:93,org/oppia/android/util/math/MathExpressionExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/app/model/MathExpression;)Z
+FN:116,org/oppia/android/util/math/MathExpressionExtensionsKt::isSingleTerm (Lorg/oppia/android/app/model/MathExpression;)Z
+FN:64,org/oppia/android/util/math/MathExpressionExtensionsKt::stripRedundantGroups (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:48,org/oppia/android/util/math/MathExpressionExtensionsKt::toComparableOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/ComparableOperation;
+FN:55,org/oppia/android/util/math/MathExpressionExtensionsKt::toPolynomial (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Polynomial;
+FN:34,org/oppia/android/util/math/MathExpressionExtensionsKt::toRawLatex (Lorg/oppia/android/app/model/MathEquation;Z)Ljava/lang/String;
+FN:26,org/oppia/android/util/math/MathExpressionExtensionsKt::toRawLatex (Lorg/oppia/android/app/model/MathExpression;Z)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::evaluateAsNumericExpression (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/app/model/MathExpression;)Z
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::isSingleTerm (Lorg/oppia/android/app/model/MathExpression;)Z
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::stripRedundantGroups (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::toComparableOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/ComparableOperation;
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::toPolynomial (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::toRawLatex (Lorg/oppia/android/app/model/MathEquation;Z)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/MathExpressionExtensionsKt::toRawLatex (Lorg/oppia/android/app/model/MathExpression;Z)Ljava/lang/String;
+FNF:8
+FNH:0
+DA:26,0
+DA:34,0
+DA:41,0
+DA:48,0
+DA:55,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:103,0
+DA:104,0
+DA:107,0
+DA:108,0
+DA:110,0
+DA:111,0
+DA:116,0
+DA:117,0
+DA:118,0
+LH:0
+LF:40
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/MathExpressionParser.kt
+FN:1016,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs$computeBinaryOperationExpression$1::invoke (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1002,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Z)V
+FN:1002,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+FN:1015,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::computeBinaryOperationExpression (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:1003,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::getOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:1004,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::getRhsResult ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:1005,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::isImplicit ()Z
+FN:777,org/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode::<clinit> ()V
+FN:798,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Failure::<init> (Lorg/oppia/android/util/math/MathParsingError;)V
+FN:798,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Failure::getError ()Lorg/oppia/android/util/math/MathParsingError;
+FN:795,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Success::<init> (Ljava/lang/Object;)V
+FN:795,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Success::getResult ()Ljava/lang/Object;
+FN:949,org/oppia/android/util/math/MathExpressionParser$Companion$also$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:972,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$1$1::invoke (Ljava/lang/Object;)Ljava/lang/Object;
+FN:971,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:989,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$2$1$1::invoke (Ljava/lang/Object;)Ljava/lang/Object;
+FN:988,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$2$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:987,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$2::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:898,org/oppia/android/util/math/MathExpressionParser$Companion$map$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:932,org/oppia/android/util/math/MathExpressionParser$Companion$maybeFail$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:858,org/oppia/android/util/math/MathExpressionParser$Companion$parseAlgebraicEquation$1::invoke (Lorg/oppia/android/app/model/MathEquation;)Lorg/oppia/android/app/model/MathEquation;
+FN:837,org/oppia/android/util/math/MathExpressionParser$Companion$parseAlgebraicExpression$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:816,org/oppia/android/util/math/MathExpressionParser$Companion$parseNumericExpression$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:948,org/oppia/android/util/math/MathExpressionParser$Companion::also (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function0;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:970,org/oppia/android/util/math/MathExpressionParser$Companion::combineWith (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function2;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:986,org/oppia/android/util/math/MathExpressionParser$Companion::combineWith (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function3;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:1195,org/oppia/android/util/math/MathExpressionParser$Companion::containsExponentiation (Lorg/oppia/android/app/model/MathExpression;)Z
+FN:873,org/oppia/android/util/math/MathExpressionParser$Companion::createAlgebraicParser (Ljava/lang/String;ZLjava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser;
+FN:865,org/oppia/android/util/math/MathExpressionParser$Companion::createNumericParser (Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser;
+FN:1143,org/oppia/android/util/math/MathExpressionParser$Companion::findAllDisallowedVariables (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathExpressionParser$ParseContext;)Ljava/util/Set;
+FN:1151,org/oppia/android/util/math/MathExpressionParser$Companion::findAllDisallowedVariablesAux (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext;)Ljava/util/Set;
+FN:1031,org/oppia/android/util/math/MathExpressionParser$Companion::findFirstMultiRedundantGroup (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1125,org/oppia/android/util/math/MathExpressionParser$Companion::findNextDivisionByZero (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1092,org/oppia/android/util/math/MathExpressionParser$Companion::findNextExponentiationWithTooLargePower (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1076,org/oppia/android/util/math/MathExpressionParser$Companion::findNextExponentiationWithVariablePower (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1109,org/oppia/android/util/math/MathExpressionParser$Companion::findNextNestedExponentiation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1046,org/oppia/android/util/math/MathExpressionParser$Companion::findNextRedundantGroup (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1061,org/oppia/android/util/math/MathExpressionParser$Companion::findNextRedundantUnaryOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:1165,org/oppia/android/util/math/MathExpressionParser$Companion::findNextUnaryPlus (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:913,org/oppia/android/util/math/MathExpressionParser$Companion::flatMap (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:880,org/oppia/android/util/math/MathExpressionParser$Companion::includesOptionalErrors (Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Z
+FN:885,org/oppia/android/util/math/MathExpressionParser$Companion::isFailure (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;)Z
+FN:1181,org/oppia/android/util/math/MathExpressionParser$Companion::isVariableExpression (Lorg/oppia/android/app/model/MathExpression;)Z
+FN:898,org/oppia/android/util/math/MathExpressionParser$Companion::map (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:932,org/oppia/android/util/math/MathExpressionParser$Companion::maybeFail (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:856,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicEquation (Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:851,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicEquation$default (Lorg/oppia/android/util/math/MathExpressionParser$Companion;Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:835,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicExpression (Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:830,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicExpression$default (Lorg/oppia/android/util/math/MathExpressionParser$Companion;Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:814,org/oppia/android/util/math/MathExpressionParser$Companion::parseNumericExpression (Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:810,org/oppia/android/util/math/MathExpressionParser$Companion::parseNumericExpression$default (Lorg/oppia/android/util/math/MathExpressionParser$Companion;Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:1244,org/oppia/android/util/math/MathExpressionParser$Companion::stripParseInfo (Lorg/oppia/android/app/model/MathEquation;)Lorg/oppia/android/app/model/MathEquation;
+FN:1209,org/oppia/android/util/math/MathExpressionParser$Companion::stripParseInfo (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:883,org/oppia/android/util/math/MathExpressionParser$Companion::toFailure (Lorg/oppia/android/util/math/MathParsingError;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:757,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::<init> (Ljava/lang/String;ZLjava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)V
+FN:764,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::allowsVariable (Ljava/lang/String;)Z
+FN:761,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::getErrorCheckingMode ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;
+FN:759,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::isPartOfEquation ()Z
+FN:746,org/oppia/android/util/math/MathExpressionParser$ParseContext$NumericExpressionContext::<init> (Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)V
+FN:748,org/oppia/android/util/math/MathExpressionParser$ParseContext$NumericExpressionContext::getErrorCheckingMode ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;
+FN:726,org/oppia/android/util/math/MathExpressionParser$ParseContext$consumeTokenOfType$1::invoke ()Lorg/oppia/android/util/math/MathParsingError$GenericError;
+FN:728,org/oppia/android/util/math/MathExpressionParser$ParseContext$consumeTokenOfType$maybeToken$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:697,org/oppia/android/util/math/MathExpressionParser$ParseContext$tokens$2::invoke ()Lorg/oppia/android/util/math/PeekableIterator;
+FN:695,org/oppia/android/util/math/MathExpressionParser$ParseContext::<init> (Ljava/lang/String;)V
+FN:725,org/oppia/android/util/math/MathExpressionParser$ParseContext::consumeTokenOfType$default (Lorg/oppia/android/util/math/MathExpressionParser$ParseContext;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:742,org/oppia/android/util/math/MathExpressionParser$ParseContext::extractSubexpression (Lorg/oppia/android/app/model/MathExpression;)Ljava/lang/String;
+FN:737,org/oppia/android/util/math/MathExpressionParser$ParseContext::extractSubexpression (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/String;
+FN:716,org/oppia/android/util/math/MathExpressionParser$ParseContext::getPreviousToken ()Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:695,org/oppia/android/util/math/MathExpressionParser$ParseContext::getRawExpression ()Ljava/lang/String;
+FN:696,org/oppia/android/util/math/MathExpressionParser$ParseContext::getTokens ()Lorg/oppia/android/util/math/PeekableIterator;
+FN:705,org/oppia/android/util/math/MathExpressionParser$ParseContext::hasMoreTokens ()Z
+FN:708,org/oppia/android/util/math/MathExpressionParser$ParseContext::peekToken ()Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericAddExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:170,org/oppia/android/util/math/MathExpressionParser$parseGenericAddExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FN:174,org/oppia/android/util/math/MathExpressionParser$parseGenericAddExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:150,org/oppia/android/util/math/MathExpressionParser$parseGenericAddSubExpression$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericDivExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:248,org/oppia/android/util/math/MathExpressionParser$parseGenericDivExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FN:252,org/oppia/android/util/math/MathExpressionParser$parseGenericDivExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:130,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$1::invoke (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathEquation;
+FN:116,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$2$invoke$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:120,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$2::invoke ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:122,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$3::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:128,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$rhsResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:90,org/oppia/android/util/math/MathExpressionParser$parseGenericEquationGrammar$1::invoke (Lorg/oppia/android/app/model/MathEquation;)Lorg/oppia/android/util/math/MathParsingError;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$1$invoke$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:296,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:298,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FN:304,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$3::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:103,org/oppia/android/util/math/MathExpressionParser$parseGenericExpressionGrammar$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:408,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName;Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol;)Lorg/oppia/android/app/model/MathExpression;
+FN:402,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$argResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:394,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$funcNameResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName;)Lorg/oppia/android/util/math/MathParsingError;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$funcNameResult$2$invoke$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:400,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$funcNameResult$2::invoke ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$rightParenResult$1$invoke$$inlined$consumeTokenOfType$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:405,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$rightParenResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:433,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol;Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol;)Lorg/oppia/android/app/model/MathExpression;
+FN:424,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$rightParenResult$1$invoke$$inlined$consumeTokenOfType$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:430,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$rightParenResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:201,org/oppia/android/util/math/MathExpressionParser$parseGenericMultDivExpression$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericMultExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:235,org/oppia/android/util/math/MathExpressionParser$parseGenericMultExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FN:241,org/oppia/android/util/math/MathExpressionParser$parseGenericMultExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericNegatedTerm$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:460,org/oppia/android/util/math/MathExpressionParser$parseGenericNegatedTerm$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:458,org/oppia/android/util/math/MathExpressionParser$parseGenericNegatedTerm$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericPositiveTerm$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:476,org/oppia/android/util/math/MathExpressionParser$parseGenericPositiveTerm$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:474,org/oppia/android/util/math/MathExpressionParser$parseGenericPositiveTerm$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:495,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FN:493,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:491,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$sqrtResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseGenericSubExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:181,org/oppia/android/util/math/MathExpressionParser$parseGenericSubExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FN:187,org/oppia/android/util/math/MathExpressionParser$parseGenericSubExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseNumber$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseNumber$$inlined$consumeTokenOfType$default$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:511,org/oppia/android/util/math/MathExpressionParser$parseNumber$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger;)Lorg/oppia/android/app/model/MathExpression;
+FN:520,org/oppia/android/util/math/MathExpressionParser$parseNumber$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber;)Lorg/oppia/android/app/model/MathExpression;
+FN:728,org/oppia/android/util/math/MathExpressionParser$parseVariable$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FN:550,org/oppia/android/util/math/MathExpressionParser$parseVariable$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName;)Lorg/oppia/android/app/model/MathExpression;
+FN:539,org/oppia/android/util/math/MathExpressionParser$parseVariable$variableNameResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName;)Lorg/oppia/android/util/math/MathParsingError;
+FN:86,org/oppia/android/util/math/MathExpressionParser::<init> (Lorg/oppia/android/util/math/MathExpressionParser$ParseContext;)V
+FN:637,org/oppia/android/util/math/MathExpressionParser::checkForDisallowedVariables (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:633,org/oppia/android/util/math/MathExpressionParser::checkForDivisionByZero (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:619,org/oppia/android/util/math/MathExpressionParser::checkForExponentVariablePowers (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:593,org/oppia/android/util/math/MathExpressionParser::checkForFirstRedundantGroupError (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:576,org/oppia/android/util/math/MathExpressionParser::checkForLearnerErrors (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:629,org/oppia/android/util/math/MathExpressionParser::checkForNestedExponentiations (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:608,org/oppia/android/util/math/MathExpressionParser::checkForRedundantGroupError (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:615,org/oppia/android/util/math/MathExpressionParser::checkForRedundantUnaryOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:652,org/oppia/android/util/math/MathExpressionParser::checkForRemainingTokens ()Lorg/oppia/android/util/math/MathParsingError;
+FN:625,org/oppia/android/util/math/MathExpressionParser::checkForTooLargeExponentPower (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:643,org/oppia/android/util/math/MathExpressionParser::checkForUnaryPlus (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:602,org/oppia/android/util/math/MathExpressionParser::checkForWholeExpressionGroupRedundancy (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FN:273,org/oppia/android/util/math/MathExpressionParser::parseAlgebraicImplicitMultOrExpExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:377,org/oppia/android/util/math/MathExpressionParser::parseAlgebraicTermWithoutUnaryWithoutNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:169,org/oppia/android/util/math/MathExpressionParser::parseGenericAddExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:145,org/oppia/android/util/math/MathExpressionParser::parseGenericAddSubExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:562,org/oppia/android/util/math/MathExpressionParser::parseGenericBinaryExpression (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:247,org/oppia/android/util/math/MathExpressionParser::parseGenericDivExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:109,org/oppia/android/util/math/MathExpressionParser::parseGenericEquation ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:89,org/oppia/android/util/math/MathExpressionParser::parseGenericEquationGrammar ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:281,org/oppia/android/util/math/MathExpressionParser::parseGenericExpExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:293,org/oppia/android/util/math/MathExpressionParser::parseGenericExpExpressionTail (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:139,org/oppia/android/util/math/MathExpressionParser::parseGenericExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:103,org/oppia/android/util/math/MathExpressionParser::parseGenericExpressionGrammar ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:392,org/oppia/android/util/math/MathExpressionParser::parseGenericFunctionExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:421,org/oppia/android/util/math/MathExpressionParser::parseGenericGroupExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:259,org/oppia/android/util/math/MathExpressionParser::parseGenericImplicitMultExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:194,org/oppia/android/util/math/MathExpressionParser::parseGenericMultDivExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:234,org/oppia/android/util/math/MathExpressionParser::parseGenericMultExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:457,org/oppia/android/util/math/MathExpressionParser::parseGenericNegatedTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:443,org/oppia/android/util/math/MathExpressionParser::parseGenericPlusMinusUnaryTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:473,org/oppia/android/util/math/MathExpressionParser::parseGenericPositiveTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:489,org/oppia/android/util/math/MathExpressionParser::parseGenericRootedTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:180,org/oppia/android/util/math/MathExpressionParser::parseGenericSubExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:312,org/oppia/android/util/math/MathExpressionParser::parseGenericTermWithUnary ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:352,org/oppia/android/util/math/MathExpressionParser::parseGenericTermWithoutUnaryWithoutNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:508,org/oppia/android/util/math/MathExpressionParser::parseNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:267,org/oppia/android/util/math/MathExpressionParser::parseNumericImplicitMultExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:361,org/oppia/android/util/math/MathExpressionParser::parseNumericTermWithoutUnaryWithoutNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:537,org/oppia/android/util/math/MathExpressionParser::parseVariable ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:681,org/oppia/android/util/math/MathExpressionParser::toError (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName;)Lorg/oppia/android/util/math/MathParsingError;
+FN:684,org/oppia/android/util/math/MathExpressionParser::toError (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken;)Lorg/oppia/android/util/math/MathParsingError;
+FN:686,org/oppia/android/util/math/MathExpressionParser::toFailure (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:688,org/oppia/android/util/math/MathExpressionParser::toFailure (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FN:672,org/oppia/android/util/math/MathExpressionParser::toReal (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger;)Lorg/oppia/android/app/model/Real;
+FN:676,org/oppia/android/util/math/MathExpressionParser::toReal (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber;)Lorg/oppia/android/app/model/Real;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs$computeBinaryOperationExpression$1::invoke (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Z)V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::computeBinaryOperationExpression (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::getOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::getRhsResult ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs::isImplicit ()Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode::<clinit> ()V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Failure::<init> (Lorg/oppia/android/util/math/MathParsingError;)V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Failure::getError ()Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Success::<init> (Ljava/lang/Object;)V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult$Success::getResult ()Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$also$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$1$1::invoke (Ljava/lang/Object;)Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$2$1$1::invoke (Ljava/lang/Object;)Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$2$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$combineWith$2::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$map$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$maybeFail$1::invoke (Ljava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$parseAlgebraicEquation$1::invoke (Lorg/oppia/android/app/model/MathEquation;)Lorg/oppia/android/app/model/MathEquation;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$parseAlgebraicExpression$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion$parseNumericExpression$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::also (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function0;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::combineWith (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function2;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::combineWith (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function3;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::containsExponentiation (Lorg/oppia/android/app/model/MathExpression;)Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::createAlgebraicParser (Ljava/lang/String;ZLjava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::createNumericParser (Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findAllDisallowedVariables (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathExpressionParser$ParseContext;)Ljava/util/Set;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findAllDisallowedVariablesAux (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext;)Ljava/util/Set;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findFirstMultiRedundantGroup (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findNextDivisionByZero (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findNextExponentiationWithTooLargePower (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findNextExponentiationWithVariablePower (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findNextNestedExponentiation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findNextRedundantGroup (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findNextRedundantUnaryOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::findNextUnaryPlus (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::flatMap (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::includesOptionalErrors (Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::isFailure (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;)Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::isVariableExpression (Lorg/oppia/android/app/model/MathExpression;)Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::map (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::maybeFail (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicEquation (Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicEquation$default (Lorg/oppia/android/util/math/MathExpressionParser$Companion;Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicExpression (Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$Companion::parseAlgebraicExpression$default (Lorg/oppia/android/util/math/MathExpressionParser$Companion;Ljava/lang/String;Ljava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::parseNumericExpression (Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$Companion::parseNumericExpression$default (Lorg/oppia/android/util/math/MathExpressionParser$Companion;Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::stripParseInfo (Lorg/oppia/android/app/model/MathEquation;)Lorg/oppia/android/app/model/MathEquation;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::stripParseInfo (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$Companion::toFailure (Lorg/oppia/android/util/math/MathParsingError;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::<init> (Ljava/lang/String;ZLjava/util/List;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::allowsVariable (Ljava/lang/String;)Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::getErrorCheckingMode ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext$AlgebraicExpressionContext::isPartOfEquation ()Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext$NumericExpressionContext::<init> (Ljava/lang/String;Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;)V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext$NumericExpressionContext::getErrorCheckingMode ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$ErrorCheckingMode;
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$ParseContext$consumeTokenOfType$1::invoke ()Lorg/oppia/android/util/math/MathParsingError$GenericError;
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$ParseContext$consumeTokenOfType$maybeToken$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext$tokens$2::invoke ()Lorg/oppia/android/util/math/PeekableIterator;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::<init> (Ljava/lang/String;)V
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$ParseContext::consumeTokenOfType$default (Lorg/oppia/android/util/math/MathExpressionParser$ParseContext;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::extractSubexpression (Lorg/oppia/android/app/model/MathExpression;)Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::extractSubexpression (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::getPreviousToken ()Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::getRawExpression ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::getTokens ()Lorg/oppia/android/util/math/PeekableIterator;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::hasMoreTokens ()Z
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$ParseContext::peekToken ()Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericAddExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericAddExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericAddExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericAddSubExpression$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericDivExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericDivExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericDivExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$1::invoke (Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathEquation;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$2$invoke$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$2::invoke ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$lhsResult$3::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericEquation$rhsResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericEquationGrammar$1::invoke (Lorg/oppia/android/app/model/MathEquation;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$1$invoke$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericExpExpressionTail$3::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericExpressionGrammar$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName;Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$argResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$funcNameResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$funcNameResult$2$invoke$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$funcNameResult$2::invoke ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$rightParenResult$1$invoke$$inlined$consumeTokenOfType$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericFunctionExpression$rightParenResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol;Lorg/oppia/android/app/model/MathExpression;Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$rightParenResult$1$invoke$$inlined$consumeTokenOfType$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericGroupExpression$rightParenResult$1::invoke (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericMultDivExpression$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$BinaryOperationRhs;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericMultExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericMultExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericMultExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericNegatedTerm$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericNegatedTerm$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericNegatedTerm$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericPositiveTerm$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericPositiveTerm$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericPositiveTerm$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:0,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol;Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$expResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericRootedTerm$sqrtResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericSubExpressionRhs$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericSubExpressionRhs$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseGenericSubExpressionRhs$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseNumber$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseNumber$$inlined$consumeTokenOfType$default$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseNumber$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseNumber$2::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseVariable$$inlined$consumeTokenOfType$default$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseVariable$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName;)Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser$parseVariable$variableNameResult$1::invoke (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::<init> (Lorg/oppia/android/util/math/MathExpressionParser$ParseContext;)V
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForDisallowedVariables (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForDivisionByZero (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForExponentVariablePowers (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForFirstRedundantGroupError (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForLearnerErrors (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForNestedExponentiations (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForRedundantGroupError (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForRedundantUnaryOperation (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForRemainingTokens ()Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForTooLargeExponentPower (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForUnaryPlus (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::checkForWholeExpressionGroupRedundancy (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseAlgebraicImplicitMultOrExpExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseAlgebraicTermWithoutUnaryWithoutNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericAddExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericAddSubExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericBinaryExpression (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericDivExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericEquation ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericEquationGrammar ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericExpExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericExpExpressionTail (Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericExpressionGrammar ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericFunctionExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericGroupExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericImplicitMultExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericMultDivExpression ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericMultExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericNegatedTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericPlusMinusUnaryTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericPositiveTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericRootedTerm ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericSubExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericTermWithUnary ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseGenericTermWithoutUnaryWithoutNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseNumericImplicitMultExpressionRhs ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseNumericTermWithoutUnaryWithoutNumber ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::parseVariable ()Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::toError (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::toError (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken;)Lorg/oppia/android/util/math/MathParsingError;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::toFailure (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::toFailure (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken;)Lorg/oppia/android/util/math/MathExpressionParser$Companion$MathParsingResult;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::toReal (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger;)Lorg/oppia/android/app/model/Real;
+FNDA:1,org/oppia/android/util/math/MathExpressionParser::toReal (Lorg/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber;)Lorg/oppia/android/app/model/Real;
+FNF:175
+FNH:167
+BRDA:90,0,0,1
+BRDA:90,0,1,1
+BRDA:109,0,0,1
+BRDA:109,0,1,1
+BRDA:116,0,0,1
+BRDA:116,0,1,1
+BRDA:122,0,0,1
+BRDA:122,0,1,1
+BRDA:151,0,0,1
+BRDA:151,0,1,1
+BRDA:155,0,0,1
+BRDA:155,0,1,1
+BRDA:159,0,0,1
+BRDA:159,0,1,1
+BRDA:159,0,2,1
+BRDA:159,0,3,1
+BRDA:159,0,4,1
+BRDA:159,0,5,1
+BRDA:159,0,6,1
+BRDA:159,0,7,1
+BRDA:160,0,0,1
+BRDA:160,0,1,1
+BRDA:160,0,2,1
+BRDA:160,0,3,1
+BRDA:160,0,4,1
+BRDA:160,0,5,1
+BRDA:160,0,6,1
+BRDA:160,0,7,1
+BRDA:161,0,0,1
+BRDA:161,0,1,1
+BRDA:161,0,2,1
+BRDA:161,0,3,1
+BRDA:161,0,4,1
+BRDA:161,0,5,1
+BRDA:161,0,6,1
+BRDA:161,0,7,1
+BRDA:162,0,0,1
+BRDA:162,0,1,1
+BRDA:162,0,2,1
+BRDA:162,0,3,0
+BRDA:170,0,0,1
+BRDA:170,0,1,1
+BRDA:181,0,0,1
+BRDA:181,0,1,1
+BRDA:202,0,0,1
+BRDA:202,0,1,1
+BRDA:206,0,0,1
+BRDA:206,0,1,1
+BRDA:210,0,0,0
+BRDA:210,0,1,1
+BRDA:210,0,2,1
+BRDA:210,0,3,1
+BRDA:210,0,4,1
+BRDA:210,0,5,1
+BRDA:215,0,0,1
+BRDA:215,0,1,1
+BRDA:216,0,0,1
+BRDA:216,0,1,1
+BRDA:225,0,0,1
+BRDA:225,0,1,1
+BRDA:225,0,2,1
+BRDA:225,0,3,1
+BRDA:225,0,4,1
+BRDA:225,0,5,1
+BRDA:225,0,6,1
+BRDA:225,0,7,1
+BRDA:226,0,0,1
+BRDA:226,0,1,1
+BRDA:226,0,2,1
+BRDA:226,0,3,1
+BRDA:226,0,4,1
+BRDA:226,0,5,1
+BRDA:226,0,6,1
+BRDA:226,0,7,1
+BRDA:227,0,0,1
+BRDA:227,0,1,1
+BRDA:227,0,2,1
+BRDA:227,0,3,0
+BRDA:235,0,0,1
+BRDA:235,0,1,1
+BRDA:248,0,0,1
+BRDA:248,0,1,1
+BRDA:260,0,0,1
+BRDA:260,0,1,1
+BRDA:274,0,0,1
+BRDA:274,0,1,1
+BRDA:282,0,0,1
+BRDA:282,0,1,1
+BRDA:298,0,0,1
+BRDA:298,0,1,1
+BRDA:313,0,0,1
+BRDA:313,0,1,1
+BRDA:313,0,2,1
+BRDA:313,0,3,1
+BRDA:314,0,0,1
+BRDA:314,0,1,1
+BRDA:314,0,2,1
+BRDA:314,0,3,1
+BRDA:314,0,4,1
+BRDA:314,0,5,1
+BRDA:314,0,6,1
+BRDA:314,0,7,1
+BRDA:318,0,0,1
+BRDA:318,0,1,1
+BRDA:318,0,2,1
+BRDA:318,0,3,1
+BRDA:318,0,4,1
+BRDA:318,0,5,1
+BRDA:318,0,6,1
+BRDA:318,0,7,1
+BRDA:320,0,0,1
+BRDA:320,0,1,1
+BRDA:320,0,2,1
+BRDA:320,0,3,1
+BRDA:320,0,4,1
+BRDA:320,0,5,1
+BRDA:323,0,0,1
+BRDA:323,0,1,1
+BRDA:329,0,0,1
+BRDA:329,0,1,0
+BRDA:338,0,0,1
+BRDA:338,0,1,1
+BRDA:339,0,0,1
+BRDA:339,0,1,1
+BRDA:339,0,2,0
+BRDA:339,0,3,1
+BRDA:343,0,0,1
+BRDA:343,0,1,1
+BRDA:344,0,0,1
+BRDA:344,0,1,1
+BRDA:345,0,0,1
+BRDA:345,0,1,1
+BRDA:345,0,2,1
+BRDA:345,0,3,0
+BRDA:353,0,0,1
+BRDA:353,0,1,1
+BRDA:362,0,0,1
+BRDA:362,0,1,1
+BRDA:363,0,0,1
+BRDA:363,0,1,1
+BRDA:364,0,0,1
+BRDA:364,0,1,1
+BRDA:365,0,0,1
+BRDA:365,0,1,0
+BRDA:366,0,0,-
+BRDA:366,0,1,-
+BRDA:366,0,2,-
+BRDA:366,0,3,-
+BRDA:366,0,4,-
+BRDA:366,0,5,-
+BRDA:366,0,6,-
+BRDA:366,0,7,-
+BRDA:367,0,0,-
+BRDA:367,0,1,-
+BRDA:367,0,2,-
+BRDA:367,0,3,-
+BRDA:367,0,4,-
+BRDA:367,0,5,-
+BRDA:367,0,6,-
+BRDA:367,0,7,-
+BRDA:368,0,0,-
+BRDA:368,0,1,-
+BRDA:368,0,2,-
+BRDA:368,0,3,-
+BRDA:368,0,4,-
+BRDA:368,0,5,-
+BRDA:369,0,0,-
+BRDA:369,0,1,-
+BRDA:378,0,0,1
+BRDA:378,0,1,1
+BRDA:379,0,0,1
+BRDA:379,0,1,1
+BRDA:380,0,0,0
+BRDA:380,0,1,1
+BRDA:381,0,0,1
+BRDA:381,0,1,0
+BRDA:382,0,0,-
+BRDA:382,0,1,-
+BRDA:382,0,2,-
+BRDA:382,0,3,-
+BRDA:382,0,4,-
+BRDA:382,0,5,-
+BRDA:382,0,6,-
+BRDA:382,0,7,-
+BRDA:383,0,0,-
+BRDA:383,0,1,-
+BRDA:383,0,2,-
+BRDA:383,0,3,-
+BRDA:383,0,4,-
+BRDA:383,0,5,-
+BRDA:383,0,6,-
+BRDA:383,0,7,-
+BRDA:384,0,0,-
+BRDA:384,0,1,-
+BRDA:384,0,2,-
+BRDA:384,0,3,-
+BRDA:384,0,4,-
+BRDA:384,0,5,-
+BRDA:385,0,0,-
+BRDA:385,0,1,-
+BRDA:395,0,0,1
+BRDA:395,0,1,1
+BRDA:396,0,0,1
+BRDA:396,0,1,0
+BRDA:424,0,0,1
+BRDA:424,0,1,1
+BRDA:444,0,0,1
+BRDA:444,0,1,1
+BRDA:445,0,0,1
+BRDA:445,0,1,0
+BRDA:446,0,0,-
+BRDA:446,0,1,-
+BRDA:446,0,2,-
+BRDA:446,0,3,-
+BRDA:446,0,4,-
+BRDA:446,0,5,-
+BRDA:446,0,6,-
+BRDA:446,0,7,-
+BRDA:447,0,0,-
+BRDA:447,0,1,-
+BRDA:447,0,2,-
+BRDA:447,0,3,-
+BRDA:447,0,4,-
+BRDA:447,0,5,-
+BRDA:447,0,6,-
+BRDA:447,0,7,-
+BRDA:448,0,0,-
+BRDA:448,0,1,-
+BRDA:448,0,2,-
+BRDA:448,0,3,-
+BRDA:448,0,4,-
+BRDA:448,0,5,-
+BRDA:448,0,6,-
+BRDA:448,0,7,-
+BRDA:448,0,8,-
+BRDA:448,0,9,-
+BRDA:450,0,0,-
+BRDA:450,0,1,-
+BRDA:491,0,0,1
+BRDA:491,0,1,1
+BRDA:509,0,0,1
+BRDA:509,0,1,1
+BRDA:518,0,0,1
+BRDA:518,0,1,0
+BRDA:527,0,0,-
+BRDA:527,0,1,-
+BRDA:527,0,2,-
+BRDA:527,0,3,-
+BRDA:527,0,4,-
+BRDA:527,0,5,-
+BRDA:527,0,6,-
+BRDA:527,0,7,-
+BRDA:528,0,0,-
+BRDA:528,0,1,-
+BRDA:528,0,2,-
+BRDA:528,0,3,-
+BRDA:528,0,4,-
+BRDA:528,0,5,-
+BRDA:528,0,6,-
+BRDA:528,0,7,-
+BRDA:529,0,0,-
+BRDA:529,0,1,-
+BRDA:529,0,2,-
+BRDA:529,0,3,-
+BRDA:529,0,4,-
+BRDA:529,0,5,-
+BRDA:529,0,6,-
+BRDA:529,0,7,-
+BRDA:529,0,8,-
+BRDA:529,0,9,-
+BRDA:531,0,0,-
+BRDA:531,0,1,-
+BRDA:539,0,0,1
+BRDA:539,0,1,1
+BRDA:541,0,0,1
+BRDA:541,0,1,1
+BRDA:543,0,0,1
+BRDA:543,0,1,1
+BRDA:563,0,0,1
+BRDA:563,0,1,1
+BRDA:566,0,0,0
+BRDA:566,0,1,1
+BRDA:567,0,0,1
+BRDA:567,0,1,1
+BRDA:577,0,0,1
+BRDA:577,0,1,1
+BRDA:578,0,0,1
+BRDA:578,0,1,1
+BRDA:578,0,2,1
+BRDA:578,0,3,1
+BRDA:578,0,4,1
+BRDA:578,0,5,1
+BRDA:578,0,6,1
+BRDA:578,0,7,1
+BRDA:578,0,8,1
+BRDA:578,0,9,1
+BRDA:578,0,10,1
+BRDA:578,0,11,1
+BRDA:578,0,12,1
+BRDA:578,0,13,1
+BRDA:578,0,14,1
+BRDA:578,0,15,1
+BRDA:578,0,16,1
+BRDA:578,0,17,1
+BRDA:589,0,0,1
+BRDA:589,0,1,1
+BRDA:593,0,0,1
+BRDA:593,0,1,1
+BRDA:602,0,0,1
+BRDA:602,0,1,1
+BRDA:608,0,0,1
+BRDA:608,0,1,1
+BRDA:615,0,0,1
+BRDA:615,0,1,1
+BRDA:619,0,0,1
+BRDA:619,0,1,1
+BRDA:625,0,0,1
+BRDA:625,0,1,1
+BRDA:629,0,0,1
+BRDA:629,0,1,1
+BRDA:633,0,0,1
+BRDA:633,0,1,1
+BRDA:637,0,0,1
+BRDA:637,0,1,1
+BRDA:637,0,2,1
+BRDA:637,0,3,1
+BRDA:637,0,4,1
+BRDA:637,0,5,1
+BRDA:643,0,0,1
+BRDA:643,0,1,1
+BRDA:652,0,0,1
+BRDA:652,0,1,1
+BRDA:654,0,0,0
+BRDA:654,0,1,1
+BRDA:654,0,2,1
+BRDA:654,0,3,1
+BRDA:655,0,0,1
+BRDA:655,0,1,1
+BRDA:656,0,0,0
+BRDA:656,0,1,1
+BRDA:656,0,2,1
+BRDA:656,0,3,1
+BRDA:660,0,0,0
+BRDA:660,0,1,1
+BRDA:661,0,0,1
+BRDA:661,0,1,1
+BRDA:662,0,0,1
+BRDA:662,0,1,1
+BRDA:662,0,2,1
+BRDA:662,0,3,0
+BRDA:665,0,0,1
+BRDA:665,0,1,0
+BRDA:665,0,2,1
+BRDA:665,0,3,0
+BRDA:665,0,4,1
+BRDA:665,0,5,0
+BRDA:665,0,6,1
+BRDA:665,0,7,0
+BRDA:666,0,0,1
+BRDA:666,0,1,0
+BRDA:666,0,2,1
+BRDA:666,0,3,0
+BRDA:666,0,4,1
+BRDA:666,0,5,0
+BRDA:666,0,6,1
+BRDA:666,0,7,0
+BRDA:666,0,8,1
+BRDA:666,0,9,0
+BRDA:667,0,0,-
+BRDA:667,0,1,-
+BRDA:729,0,0,-
+BRDA:729,0,1,-
+BRDA:880,0,0,1
+BRDA:880,0,1,1
+BRDA:914,0,0,1
+BRDA:914,0,1,1
+BRDA:932,0,0,1
+BRDA:932,0,1,1
+BRDA:932,0,2,1
+BRDA:932,0,3,0
+BRDA:950,0,0,1
+BRDA:950,0,1,1
+BRDA:1031,0,0,0
+BRDA:1031,0,1,1
+BRDA:1031,0,2,1
+BRDA:1031,0,3,1
+BRDA:1031,0,4,1
+BRDA:1031,0,5,1
+BRDA:1031,0,6,1
+BRDA:1031,0,7,0
+BRDA:1033,0,0,0
+BRDA:1033,0,1,1
+BRDA:1039,0,0,1
+BRDA:1039,0,1,1
+BRDA:1039,0,2,1
+BRDA:1039,0,3,1
+BRDA:1039,0,4,1
+BRDA:1039,0,5,1
+BRDA:1046,0,0,0
+BRDA:1046,0,1,1
+BRDA:1046,0,2,1
+BRDA:1046,0,3,1
+BRDA:1046,0,4,1
+BRDA:1046,0,5,1
+BRDA:1046,0,6,1
+BRDA:1046,0,7,0
+BRDA:1048,0,0,1
+BRDA:1048,0,1,1
+BRDA:1053,0,0,1
+BRDA:1053,0,1,1
+BRDA:1053,0,2,1
+BRDA:1053,0,3,1
+BRDA:1061,0,0,0
+BRDA:1061,0,1,1
+BRDA:1061,0,2,1
+BRDA:1061,0,3,1
+BRDA:1061,0,4,1
+BRDA:1061,0,5,1
+BRDA:1061,0,6,1
+BRDA:1061,0,7,0
+BRDA:1063,0,0,0
+BRDA:1063,0,1,1
+BRDA:1066,0,0,1
+BRDA:1066,0,1,1
+BRDA:1066,0,2,1
+BRDA:1066,0,3,1
+BRDA:1067,0,0,1
+BRDA:1067,0,1,1
+BRDA:1076,0,0,0
+BRDA:1076,0,1,1
+BRDA:1076,0,2,1
+BRDA:1076,0,3,1
+BRDA:1076,0,4,1
+BRDA:1076,0,5,1
+BRDA:1076,0,6,1
+BRDA:1076,0,7,0
+BRDA:1078,0,0,1
+BRDA:1078,0,1,1
+BRDA:1078,0,2,1
+BRDA:1078,0,3,1
+BRDA:1078,0,4,0
+BRDA:1078,0,5,1
+BRDA:1079,0,0,1
+BRDA:1079,0,1,1
+BRDA:1080,0,0,1
+BRDA:1080,0,1,1
+BRDA:1092,0,0,0
+BRDA:1092,0,1,1
+BRDA:1092,0,2,1
+BRDA:1092,0,3,1
+BRDA:1092,0,4,1
+BRDA:1092,0,5,1
+BRDA:1092,0,6,1
+BRDA:1092,0,7,0
+BRDA:1094,0,0,1
+BRDA:1094,0,1,1
+BRDA:1094,0,2,1
+BRDA:1094,0,3,1
+BRDA:1094,0,4,0
+BRDA:1094,0,5,1
+BRDA:1095,0,0,1
+BRDA:1095,0,1,1
+BRDA:1096,0,0,1
+BRDA:1096,0,1,1
+BRDA:1097,0,0,1
+BRDA:1097,0,1,1
+BRDA:1109,0,0,0
+BRDA:1109,0,1,1
+BRDA:1109,0,2,1
+BRDA:1109,0,3,1
+BRDA:1109,0,4,1
+BRDA:1109,0,5,1
+BRDA:1109,0,6,1
+BRDA:1109,0,7,0
+BRDA:1111,0,0,1
+BRDA:1111,0,1,1
+BRDA:1111,0,2,1
+BRDA:1111,0,3,1
+BRDA:1111,0,4,0
+BRDA:1111,0,5,1
+BRDA:1112,0,0,1
+BRDA:1112,0,1,1
+BRDA:1113,0,0,1
+BRDA:1113,0,1,1
+BRDA:1125,0,0,0
+BRDA:1125,0,1,1
+BRDA:1125,0,2,1
+BRDA:1125,0,3,1
+BRDA:1125,0,4,1
+BRDA:1125,0,5,1
+BRDA:1125,0,6,1
+BRDA:1125,0,7,0
+BRDA:1127,0,0,1
+BRDA:1127,0,1,1
+BRDA:1127,0,2,1
+BRDA:1127,0,3,1
+BRDA:1127,0,4,0
+BRDA:1127,0,5,1
+BRDA:1128,0,0,1
+BRDA:1128,0,1,1
+BRDA:1129,0,0,0
+BRDA:1129,0,1,1
+BRDA:1131,0,0,0
+BRDA:1131,0,1,1
+BRDA:1143,0,0,1
+BRDA:1143,0,1,1
+BRDA:1151,0,0,0
+BRDA:1151,0,1,1
+BRDA:1151,0,2,1
+BRDA:1151,0,3,1
+BRDA:1151,0,4,0
+BRDA:1151,0,5,0
+BRDA:1151,0,6,1
+BRDA:1151,0,7,1
+BRDA:1151,0,8,0
+BRDA:1152,0,0,1
+BRDA:1152,0,1,1
+BRDA:1165,0,0,0
+BRDA:1165,0,1,1
+BRDA:1165,0,2,1
+BRDA:1165,0,3,1
+BRDA:1165,0,4,1
+BRDA:1165,0,5,1
+BRDA:1165,0,6,1
+BRDA:1165,0,7,0
+BRDA:1167,0,0,0
+BRDA:1167,0,1,1
+BRDA:1169,0,0,0
+BRDA:1169,0,1,1
+BRDA:1169,0,2,1
+BRDA:1169,0,3,1
+BRDA:1169,0,4,0
+BRDA:1181,0,0,0
+BRDA:1181,0,1,1
+BRDA:1181,0,2,1
+BRDA:1181,0,3,1
+BRDA:1181,0,4,1
+BRDA:1181,0,5,1
+BRDA:1181,0,6,1
+BRDA:1181,0,7,1
+BRDA:1181,0,8,0
+BRDA:1184,0,0,0
+BRDA:1184,0,1,1
+BRDA:1185,0,0,1
+BRDA:1185,0,1,1
+BRDA:1195,0,0,0
+BRDA:1195,0,1,1
+BRDA:1195,0,2,0
+BRDA:1195,0,3,1
+BRDA:1195,0,4,0
+BRDA:1195,0,5,0
+BRDA:1195,0,6,1
+BRDA:1195,0,7,0
+BRDA:1197,0,0,1
+BRDA:1197,0,1,0
+BRDA:1198,0,0,-
+BRDA:1198,0,1,-
+BRDA:1199,0,0,-
+BRDA:1199,0,1,-
+BRDA:1209,0,0,0
+BRDA:1209,0,1,1
+BRDA:1209,0,2,1
+BRDA:1209,0,3,1
+BRDA:1209,0,4,1
+BRDA:1209,0,5,1
+BRDA:1209,0,6,1
+BRDA:1209,0,7,0
+BRF:567
+BRH:386
+DA:86,1
+DA:89,1
+DA:90,1
+DA:103,1
+DA:109,1
+DA:111,1
+DA:114,1
+DA:116,1
+DA:117,1
+DA:118,1
+DA:119,1
+DA:120,1
+DA:121,1
+DA:122,1
+DA:124,1
+DA:125,1
+DA:128,1
+DA:129,1
+DA:130,1
+DA:131,1
+DA:132,1
+DA:133,1
+DA:139,1
+DA:145,1
+DA:146,1
+DA:150,1
+DA:151,1
+DA:152,1
+DA:153,1
+DA:155,1
+DA:156,1
+DA:157,1
+DA:159,1
+DA:160,1
+DA:161,1
+DA:162,1
+DA:169,1
+DA:170,1
+DA:171,1
+DA:172,1
+DA:173,1
+DA:174,1
+DA:180,1
+DA:181,1
+DA:182,1
+DA:183,1
+DA:185,1
+DA:186,1
+DA:187,1
+DA:194,1
+DA:195,1
+DA:201,1
+DA:202,1
+DA:203,1
+DA:204,1
+DA:206,1
+DA:207,1
+DA:208,1
+DA:210,1
+DA:211,1
+DA:212,1
+DA:213,1
+DA:215,1
+DA:216,1
+DA:217,1
+DA:218,1
+DA:219,1
+DA:220,1
+DA:222,1
+DA:225,1
+DA:226,1
+DA:227,1
+DA:234,1
+DA:235,1
+DA:236,1
+DA:237,1
+DA:239,1
+DA:240,1
+DA:241,1
+DA:247,1
+DA:248,1
+DA:249,1
+DA:250,1
+DA:251,1
+DA:252,1
+DA:259,1
+DA:260,1
+DA:261,1
+DA:267,1
+DA:273,1
+DA:274,1
+DA:275,1
+DA:276,1
+DA:281,1
+DA:282,1
+DA:283,1
+DA:284,1
+DA:293,1
+DA:294,1
+DA:295,1
+DA:296,1
+DA:297,1
+DA:298,1
+DA:299,1
+DA:300,1
+DA:302,1
+DA:303,1
+DA:304,1
+DA:306,1
+DA:312,1
+DA:313,1
+DA:314,1
+DA:315,1
+DA:316,1
+DA:317,1
+DA:318,1
+DA:319,1
+DA:320,1
+DA:321,1
+DA:322,1
+DA:323,1
+DA:324,1
+DA:325,1
+DA:326,1
+DA:327,1
+DA:329,1
+DA:330,1
+DA:331,1
+DA:332,1
+DA:333,1
+DA:335,0
+DA:338,1
+DA:339,1
+DA:340,1
+DA:341,1
+DA:343,1
+DA:344,1
+DA:345,1
+DA:352,1
+DA:353,1
+DA:354,1
+DA:361,1
+DA:362,1
+DA:363,1
+DA:364,1
+DA:365,1
+DA:366,0
+DA:367,0
+DA:368,0
+DA:369,0
+DA:370,0
+DA:377,1
+DA:378,1
+DA:379,1
+DA:380,1
+DA:381,1
+DA:382,0
+DA:383,0
+DA:384,0
+DA:385,0
+DA:386,0
+DA:392,1
+DA:393,1
+DA:394,1
+DA:395,1
+DA:396,1
+DA:397,0
+DA:399,1
+DA:400,1
+DA:402,1
+DA:403,1
+DA:404,1
+DA:405,1
+DA:407,1
+DA:408,1
+DA:409,1
+DA:410,1
+DA:411,1
+DA:412,1
+DA:413,1
+DA:414,1
+DA:415,1
+DA:421,1
+DA:422,1
+DA:423,1
+DA:424,1
+DA:425,1
+DA:426,1
+DA:428,1
+DA:429,1
+DA:430,1
+DA:432,1
+DA:433,1
+DA:434,1
+DA:435,1
+DA:436,1
+DA:437,1
+DA:443,1
+DA:444,1
+DA:445,1
+DA:446,0
+DA:447,0
+DA:448,0
+DA:449,0
+DA:450,0
+DA:451,0
+DA:457,1
+DA:458,1
+DA:459,1
+DA:460,1
+DA:461,1
+DA:462,1
+DA:463,1
+DA:464,1
+DA:465,1
+DA:466,1
+DA:467,1
+DA:473,1
+DA:474,1
+DA:475,1
+DA:476,1
+DA:477,1
+DA:478,1
+DA:479,1
+DA:480,1
+DA:481,1
+DA:482,1
+DA:483,1
+DA:489,1
+DA:490,1
+DA:491,1
+DA:493,1
+DA:494,1
+DA:495,0
+DA:496,0
+DA:497,0
+DA:498,0
+DA:499,0
+DA:500,0
+DA:501,0
+DA:502,0
+DA:508,1
+DA:509,1
+DA:510,1
+DA:511,1
+DA:512,1
+DA:513,1
+DA:514,1
+DA:515,1
+DA:518,1
+DA:519,1
+DA:520,1
+DA:521,1
+DA:522,1
+DA:523,1
+DA:524,1
+DA:527,0
+DA:528,0
+DA:529,0
+DA:530,0
+DA:531,0
+DA:532,0
+DA:537,1
+DA:538,1
+DA:539,1
+DA:540,1
+DA:541,1
+DA:542,1
+DA:543,1
+DA:544,1
+DA:545,1
+DA:547,1
+DA:549,1
+DA:550,1
+DA:551,1
+DA:552,1
+DA:553,1
+DA:554,1
+DA:562,1
+DA:563,1
+DA:565,1
+DA:566,1
+DA:567,1
+DA:568,1
+DA:570,1
+DA:576,1
+DA:577,1
+DA:578,1
+DA:579,1
+DA:580,1
+DA:581,1
+DA:582,1
+DA:583,1
+DA:584,1
+DA:585,1
+DA:586,1
+DA:587,1
+DA:588,1
+DA:589,1
+DA:593,1
+DA:594,1
+DA:595,1
+DA:602,1
+DA:603,1
+DA:604,1
+DA:608,1
+DA:609,1
+DA:610,1
+DA:615,1
+DA:619,1
+DA:620,1
+DA:625,1
+DA:629,1
+DA:633,1
+DA:637,1
+DA:638,1
+DA:643,1
+DA:645,1
+DA:652,1
+DA:653,1
+DA:654,1
+DA:655,1
+DA:656,1
+DA:657,1
+DA:658,1
+DA:660,1
+DA:661,1
+DA:662,1
+DA:663,1
+DA:664,0
+DA:665,1
+DA:666,1
+DA:667,1
+DA:669,1
+DA:672,1
+DA:673,1
+DA:674,1
+DA:676,1
+DA:677,1
+DA:678,1
+DA:681,1
+DA:684,1
+DA:686,1
+DA:688,1
+DA:695,1
+DA:696,1
+DA:697,1
+DA:705,1
+DA:708,1
+DA:716,1
+DA:725,0
+DA:726,0
+DA:728,1
+DA:729,0
+DA:730,0
+DA:731,0
+DA:732,0
+DA:737,1
+DA:742,1
+DA:746,1
+DA:748,1
+DA:749,1
+DA:757,1
+DA:759,1
+DA:760,1
+DA:761,1
+DA:762,1
+DA:764,1
+DA:777,1
+DA:789,1
+DA:795,1
+DA:798,1
+DA:810,0
+DA:812,0
+DA:814,1
+DA:815,1
+DA:816,1
+DA:830,0
+DA:833,0
+DA:835,1
+DA:836,1
+DA:837,1
+DA:851,0
+DA:854,0
+DA:856,1
+DA:857,1
+DA:858,1
+DA:865,1
+DA:873,1
+DA:874,1
+DA:875,1
+DA:880,1
+DA:883,1
+DA:885,1
+DA:898,1
+DA:913,1
+DA:914,1
+DA:915,1
+DA:932,1
+DA:948,1
+DA:949,1
+DA:950,1
+DA:951,1
+DA:953,1
+DA:970,1
+DA:971,1
+DA:972,1
+DA:986,1
+DA:987,1
+DA:988,1
+DA:989,1
+DA:1002,1
+DA:1003,1
+DA:1004,1
+DA:1005,1
+DA:1015,1
+DA:1016,1
+DA:1017,1
+DA:1018,1
+DA:1019,1
+DA:1020,1
+DA:1021,1
+DA:1022,1
+DA:1023,1
+DA:1024,1
+DA:1025,1
+DA:1028,1
+DA:1031,1
+DA:1033,1
+DA:1034,1
+DA:1036,1
+DA:1037,1
+DA:1039,1
+DA:1040,1
+DA:1041,1
+DA:1046,1
+DA:1048,1
+DA:1049,1
+DA:1051,1
+DA:1052,1
+DA:1053,1
+DA:1054,1
+DA:1055,1
+DA:1056,1
+DA:1061,1
+DA:1063,1
+DA:1064,1
+DA:1066,1
+DA:1067,1
+DA:1068,1
+DA:1069,1
+DA:1070,1
+DA:1071,1
+DA:1076,1
+DA:1078,1
+DA:1079,1
+DA:1080,1
+DA:1081,1
+DA:1082,1
+DA:1084,1
+DA:1085,1
+DA:1086,1
+DA:1087,1
+DA:1092,1
+DA:1094,1
+DA:1095,1
+DA:1096,1
+DA:1097,1
+DA:1098,1
+DA:1099,1
+DA:1101,1
+DA:1102,1
+DA:1103,1
+DA:1104,1
+DA:1109,1
+DA:1111,1
+DA:1112,1
+DA:1113,1
+DA:1114,1
+DA:1115,1
+DA:1117,1
+DA:1118,1
+DA:1119,1
+DA:1120,1
+DA:1125,1
+DA:1127,1
+DA:1128,1
+DA:1129,1
+DA:1130,1
+DA:1131,1
+DA:1132,1
+DA:1133,1
+DA:1135,1
+DA:1136,1
+DA:1137,1
+DA:1138,1
+DA:1143,1
+DA:1144,1
+DA:1145,1
+DA:1151,1
+DA:1152,1
+DA:1154,1
+DA:1155,1
+DA:1157,0
+DA:1158,0
+DA:1159,1
+DA:1160,1
+DA:1165,1
+DA:1167,1
+DA:1168,1
+DA:1169,1
+DA:1170,1
+DA:1172,1
+DA:1174,1
+DA:1175,1
+DA:1176,1
+DA:1181,1
+DA:1182,1
+DA:1184,1
+DA:1185,1
+DA:1187,1
+DA:1188,1
+DA:1189,1
+DA:1190,1
+DA:1195,1
+DA:1197,1
+DA:1198,0
+DA:1199,1
+DA:1201,1
+DA:1202,0
+DA:1203,0
+DA:1204,1
+DA:1209,1
+DA:1211,1
+DA:1212,1
+DA:1213,1
+DA:1214,1
+DA:1215,1
+DA:1216,1
+DA:1219,1
+DA:1220,1
+DA:1221,1
+DA:1222,1
+DA:1223,1
+DA:1226,1
+DA:1227,1
+DA:1228,1
+DA:1229,1
+DA:1230,1
+DA:1233,1
+DA:1234,1
+DA:1235,1
+DA:1237,1
+DA:1238,1
+DA:1239,1
+DA:1240,1
+DA:1241,1
+DA:1244,1
+DA:1245,1
+DA:1246,1
+DA:1247,1
+LH:511
+LF:561
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/MathParsingError.kt
+FN:195,org/oppia/android/util/math/MathParsingError$DisabledVariablesInUseError::<init> (Ljava/util/List;)V
+FN:195,org/oppia/android/util/math/MathParsingError$DisabledVariablesInUseError::getVariables ()Ljava/util/List;
+FN:209,org/oppia/android/util/math/MathParsingError$EquationHasTooManyEqualsError::<init> ()V
+FN:202,org/oppia/android/util/math/MathParsingError$EquationIsMissingEqualsError::<init> ()V
+FN:217,org/oppia/android/util/math/MathParsingError$EquationMissingLhsOrRhsError::<init> ()V
+FN:148,org/oppia/android/util/math/MathParsingError$ExponentIsVariableExpressionError::<init> ()V
+FN:155,org/oppia/android/util/math/MathParsingError$ExponentTooLargeError::<init> ()V
+FN:234,org/oppia/android/util/math/MathParsingError$FunctionNameIncompleteError::<init> ()V
+FN:241,org/oppia/android/util/math/MathParsingError$GenericError::<init> ()V
+FN:169,org/oppia/android/util/math/MathParsingError$HangingSquareRootError::<init> ()V
+FN:227,org/oppia/android/util/math/MathParsingError$InvalidFunctionInUseError::<init> (Ljava/lang/String;)V
+FN:227,org/oppia/android/util/math/MathParsingError$InvalidFunctionInUseError::getFunctionName ()Ljava/lang/String;
+FN:51,org/oppia/android/util/math/MathParsingError$MultipleRedundantParenthesesError::<init> (Ljava/lang/String;Lorg/oppia/android/app/model/MathExpression;)V
+FN:53,org/oppia/android/util/math/MathParsingError$MultipleRedundantParenthesesError::getExpression ()Lorg/oppia/android/app/model/MathExpression;
+FN:52,org/oppia/android/util/math/MathParsingError$MultipleRedundantParenthesesError::getRawExpression ()Ljava/lang/String;
+FN:162,org/oppia/android/util/math/MathParsingError$NestedExponentsError::<init> ()V
+FN:138,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberAfterBinaryOperatorError::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Ljava/lang/String;)V
+FN:139,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberAfterBinaryOperatorError::getOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:140,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberAfterBinaryOperatorError::getOperatorSymbol ()Ljava/lang/String;
+FN:124,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberBeforeBinaryOperatorError::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Ljava/lang/String;)V
+FN:125,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberBeforeBinaryOperatorError::getOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:126,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberBeforeBinaryOperatorError::getOperatorSymbol ()Ljava/lang/String;
+FN:87,org/oppia/android/util/math/MathParsingError$NumberAfterVariableError::<init> (Lorg/oppia/android/app/model/Real;Ljava/lang/String;)V
+FN:87,org/oppia/android/util/math/MathParsingError$NumberAfterVariableError::getNumber ()Lorg/oppia/android/app/model/Real;
+FN:87,org/oppia/android/util/math/MathParsingError$NumberAfterVariableError::getVariable ()Ljava/lang/String;
+FN:64,org/oppia/android/util/math/MathParsingError$RedundantParenthesesForIndividualTermsError::<init> (Ljava/lang/String;Lorg/oppia/android/app/model/MathExpression;)V
+FN:66,org/oppia/android/util/math/MathParsingError$RedundantParenthesesForIndividualTermsError::getExpression ()Lorg/oppia/android/app/model/MathExpression;
+FN:65,org/oppia/android/util/math/MathParsingError$RedundantParenthesesForIndividualTermsError::getRawExpression ()Ljava/lang/String;
+FN:37,org/oppia/android/util/math/MathParsingError$SingleRedundantParenthesesError::<init> (Ljava/lang/String;Lorg/oppia/android/app/model/MathExpression;)V
+FN:39,org/oppia/android/util/math/MathParsingError$SingleRedundantParenthesesError::getExpression ()Lorg/oppia/android/app/model/MathExpression;
+FN:38,org/oppia/android/util/math/MathParsingError$SingleRedundantParenthesesError::getRawExpression ()Ljava/lang/String;
+FN:20,org/oppia/android/util/math/MathParsingError$SpacesBetweenNumbersError::<init> ()V
+FN:97,org/oppia/android/util/math/MathParsingError$SubsequentBinaryOperatorsError::<init> (Ljava/lang/String;Ljava/lang/String;)V
+FN:98,org/oppia/android/util/math/MathParsingError$SubsequentBinaryOperatorsError::getOperator1 ()Ljava/lang/String;
+FN:99,org/oppia/android/util/math/MathParsingError$SubsequentBinaryOperatorsError::getOperator2 ()Ljava/lang/String;
+FN:107,org/oppia/android/util/math/MathParsingError$SubsequentUnaryOperatorsError::<init> ()V
+FN:178,org/oppia/android/util/math/MathParsingError$TermDividedByZeroError::<init> ()V
+FN:27,org/oppia/android/util/math/MathParsingError$UnbalancedParenthesesError::<init> ()V
+FN:76,org/oppia/android/util/math/MathParsingError$UnnecessarySymbolsError::<init> (Ljava/lang/String;)V
+FN:76,org/oppia/android/util/math/MathParsingError$UnnecessarySymbolsError::getInvalidSymbol ()Ljava/lang/String;
+FN:185,org/oppia/android/util/math/MathParsingError$VariableInNumericExpressionError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$DisabledVariablesInUseError::<init> (Ljava/util/List;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$DisabledVariablesInUseError::getVariables ()Ljava/util/List;
+FNDA:1,org/oppia/android/util/math/MathParsingError$EquationHasTooManyEqualsError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$EquationIsMissingEqualsError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$EquationMissingLhsOrRhsError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$ExponentIsVariableExpressionError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$ExponentTooLargeError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$FunctionNameIncompleteError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$GenericError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$HangingSquareRootError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$InvalidFunctionInUseError::<init> (Ljava/lang/String;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$InvalidFunctionInUseError::getFunctionName ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$MultipleRedundantParenthesesError::<init> (Ljava/lang/String;Lorg/oppia/android/app/model/MathExpression;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$MultipleRedundantParenthesesError::getExpression ()Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathParsingError$MultipleRedundantParenthesesError::getRawExpression ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$NestedExponentsError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberAfterBinaryOperatorError::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Ljava/lang/String;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberAfterBinaryOperatorError::getOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberAfterBinaryOperatorError::getOperatorSymbol ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberBeforeBinaryOperatorError::<init> (Lorg/oppia/android/app/model/MathBinaryOperation$Operator;Ljava/lang/String;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberBeforeBinaryOperatorError::getOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathParsingError$NoVariableOrNumberBeforeBinaryOperatorError::getOperatorSymbol ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$NumberAfterVariableError::<init> (Lorg/oppia/android/app/model/Real;Ljava/lang/String;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$NumberAfterVariableError::getNumber ()Lorg/oppia/android/app/model/Real;
+FNDA:1,org/oppia/android/util/math/MathParsingError$NumberAfterVariableError::getVariable ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$RedundantParenthesesForIndividualTermsError::<init> (Ljava/lang/String;Lorg/oppia/android/app/model/MathExpression;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$RedundantParenthesesForIndividualTermsError::getExpression ()Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathParsingError$RedundantParenthesesForIndividualTermsError::getRawExpression ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$SingleRedundantParenthesesError::<init> (Ljava/lang/String;Lorg/oppia/android/app/model/MathExpression;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$SingleRedundantParenthesesError::getExpression ()Lorg/oppia/android/app/model/MathExpression;
+FNDA:1,org/oppia/android/util/math/MathParsingError$SingleRedundantParenthesesError::getRawExpression ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$SpacesBetweenNumbersError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$SubsequentBinaryOperatorsError::<init> (Ljava/lang/String;Ljava/lang/String;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$SubsequentBinaryOperatorsError::getOperator1 ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$SubsequentBinaryOperatorsError::getOperator2 ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$SubsequentUnaryOperatorsError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$TermDividedByZeroError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$UnbalancedParenthesesError::<init> ()V
+FNDA:1,org/oppia/android/util/math/MathParsingError$UnnecessarySymbolsError::<init> (Ljava/lang/String;)V
+FNDA:1,org/oppia/android/util/math/MathParsingError$UnnecessarySymbolsError::getInvalidSymbol ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathParsingError$VariableInNumericExpressionError::<init> ()V
+FNF:41
+FNH:41
+DA:20,1
+DA:27,1
+DA:37,1
+DA:38,1
+DA:39,1
+DA:40,1
+DA:51,1
+DA:52,1
+DA:53,1
+DA:54,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:67,1
+DA:76,1
+DA:87,1
+DA:97,1
+DA:98,1
+DA:99,1
+DA:100,1
+DA:107,1
+DA:124,1
+DA:125,1
+DA:126,1
+DA:127,1
+DA:138,1
+DA:139,1
+DA:140,1
+DA:141,1
+DA:148,1
+DA:155,1
+DA:162,1
+DA:169,1
+DA:178,1
+DA:185,1
+DA:195,1
+DA:202,1
+DA:209,1
+DA:217,1
+DA:227,1
+DA:234,1
+DA:241,1
+LH:42
+LF:42
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/MathTokenizer.kt
+FN:375,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::<init> (II)V
+FN:379,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:377,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::getEndIndex ()I
+FN:376,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::getStartIndex ()I
+FN:391,org/oppia/android/util/math/MathTokenizer$Companion$Token$EqualsSymbol::<init> (II)V
+FN:391,org/oppia/android/util/math/MathTokenizer$Companion$Token$EqualsSymbol::getEndIndex ()I
+FN:391,org/oppia/android/util/math/MathTokenizer$Companion$Token$EqualsSymbol::getStartIndex ()I
+FN:383,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::<init> (II)V
+FN:387,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:385,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::getEndIndex ()I
+FN:384,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::getStartIndex ()I
+FN:336,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::<init> (Ljava/lang/String;ZII)V
+FN:340,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::getEndIndex ()I
+FN:337,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::getParsedName ()Ljava/lang/String;
+FN:339,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::getStartIndex ()I
+FN:338,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::isAllowedFunction ()Z
+FN:406,org/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName::<init> (II)V
+FN:408,org/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName::getEndIndex ()I
+FN:407,org/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName::getStartIndex ()I
+FN:412,org/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken::<init> (II)V
+FN:412,org/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken::getEndIndex ()I
+FN:412,org/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken::getStartIndex ()I
+FN:394,org/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol::<init> (II)V
+FN:396,org/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol::getEndIndex ()I
+FN:395,org/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol::getStartIndex ()I
+FN:347,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::<init> (II)V
+FN:353,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:349,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getEndIndex ()I
+FN:348,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getStartIndex ()I
+FN:351,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getUnaryOperator ()Lorg/oppia/android/app/model/MathUnaryOperation$Operator;
+FN:367,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::<init> (II)V
+FN:371,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:369,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::getEndIndex ()I
+FN:368,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::getStartIndex ()I
+FN:357,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::<init> (II)V
+FN:363,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FN:359,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getEndIndex ()I
+FN:358,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getStartIndex ()I
+FN:361,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getUnaryOperator ()Lorg/oppia/android/app/model/MathUnaryOperation$Operator;
+FN:300,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::<init> (III)V
+FN:303,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::getEndIndex ()I
+FN:301,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::getParsedValue ()I
+FN:302,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::getStartIndex ()I
+FN:311,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::<init> (DII)V
+FN:314,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::getEndIndex ()I
+FN:312,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::getParsedValue ()D
+FN:313,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::getStartIndex ()I
+FN:400,org/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol::<init> (II)V
+FN:402,org/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol::getEndIndex ()I
+FN:401,org/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol::getStartIndex ()I
+FN:344,org/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol::<init> (II)V
+FN:344,org/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol::getEndIndex ()I
+FN:344,org/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol::getStartIndex ()I
+FN:322,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::<init> (Ljava/lang/String;II)V
+FN:325,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::getEndIndex ()I
+FN:323,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::getParsedName ()Ljava/lang/String;
+FN:324,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::getStartIndex ()I
+FN:435,org/oppia/android/util/math/MathTokenizer$Companion$expectNextCharsForFunctionName$1::invoke ()Ljava/lang/Character;
+FN:77,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$10::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:48,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$1::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:51,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$2::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:54,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$3::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:57,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$4::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:60,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$5::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:63,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$6::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:66,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$7::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:69,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$8::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:72,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$9::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:41,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1::invoke ()Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:191,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$1::invoke (C)Ljava/lang/Boolean;
+FN:155,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$1::invoke (C)Ljava/lang/Boolean;
+FN:162,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$2::invoke (C)Ljava/lang/Boolean;
+FN:197,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$3::invoke (C)Ljava/lang/Boolean;
+FN:201,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$4::invoke (C)Ljava/lang/Boolean;
+FN:421,org/oppia/android/util/math/MathTokenizer$Companion::consumeWhitespace (Lorg/oppia/android/util/math/PeekableIterator;)V
+FN:434,org/oppia/android/util/math/MathTokenizer$Companion::expectNextCharsForFunctionName (Lorg/oppia/android/util/math/PeekableIterator;Ljava/lang/String;I)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:415,org/oppia/android/util/math/MathTokenizer$Companion::isWhitespace (C)Z
+FN:256,org/oppia/android/util/math/MathTokenizer$Companion::parseInteger (Lorg/oppia/android/util/math/PeekableIterator;)Ljava/lang/String;
+FN:266,org/oppia/android/util/math/MathTokenizer$Companion::toValidDoubleOrNull (Ljava/lang/String;)Ljava/lang/Double;
+FN:35,org/oppia/android/util/math/MathTokenizer$Companion::tokenize (Ljava/lang/String;)Lkotlin/sequences/Sequence;
+FN:38,org/oppia/android/util/math/MathTokenizer$Companion::tokenize (Lkotlin/sequences/Sequence;)Lkotlin/sequences/Sequence;
+FN:242,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeExpectedFunction (Ljava/lang/String;ZILorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:133,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeFunctionName (CILorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:84,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeIntegerOrRealNumber (Lorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:249,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeSymbol (Lorg/oppia/android/util/math/PeekableIterator;Lkotlin/jvm/functions/Function2;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FN:112,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeVariableOrFunctionName (Lorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::<init> (II)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$DivideSymbol::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$EqualsSymbol::<init> (II)V
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$EqualsSymbol::getEndIndex ()I
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$EqualsSymbol::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::<init> (II)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$ExponentiationSymbol::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::<init> (Ljava/lang/String;ZII)V
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::getParsedName ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$FunctionName::isAllowedFunction ()Z
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName::<init> (II)V
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName::getEndIndex ()I
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$IncompleteFunctionName::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken::<init> (II)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$InvalidToken::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol::<init> (II)V
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$LeftParenthesisSymbol::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::<init> (II)V
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getStartIndex ()I
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$MinusSymbol::getUnaryOperator ()Lorg/oppia/android/app/model/MathUnaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::<init> (II)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$MultiplySymbol::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::<init> (II)V
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getBinaryOperator ()Lorg/oppia/android/app/model/MathBinaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getStartIndex ()I
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$PlusSymbol::getUnaryOperator ()Lorg/oppia/android/app/model/MathUnaryOperation$Operator;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::<init> (III)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::getParsedValue ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveInteger::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::<init> (DII)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::getParsedValue ()D
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$PositiveRealNumber::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol::<init> (II)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol::getEndIndex ()I
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$RightParenthesisSymbol::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol::<init> (II)V
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol::getEndIndex ()I
+FNDA:0,org/oppia/android/util/math/MathTokenizer$Companion$Token$SquareRootSymbol::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::<init> (Ljava/lang/String;II)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::getEndIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::getParsedName ()Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$Token$VariableName::getStartIndex ()I
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$expectNextCharsForFunctionName$1::invoke ()Ljava/lang/Character;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$10::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$1::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$2::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$3::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$4::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$5::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$6::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$7::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$8::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1$9::invoke (II)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenize$1::invoke ()Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$1::invoke (C)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$1::invoke (C)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$2::invoke (C)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$3::invoke (C)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion$tokenizeFunctionName$name$4::invoke (C)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::consumeWhitespace (Lorg/oppia/android/util/math/PeekableIterator;)V
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::expectNextCharsForFunctionName (Lorg/oppia/android/util/math/PeekableIterator;Ljava/lang/String;I)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::isWhitespace (C)Z
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::parseInteger (Lorg/oppia/android/util/math/PeekableIterator;)Ljava/lang/String;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::toValidDoubleOrNull (Ljava/lang/String;)Ljava/lang/Double;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::tokenize (Ljava/lang/String;)Lkotlin/sequences/Sequence;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::tokenize (Lkotlin/sequences/Sequence;)Lkotlin/sequences/Sequence;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeExpectedFunction (Ljava/lang/String;ZILorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeFunctionName (CILorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeIntegerOrRealNumber (Lorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeSymbol (Lorg/oppia/android/util/math/PeekableIterator;Lkotlin/jvm/functions/Function2;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNDA:1,org/oppia/android/util/math/MathTokenizer$Companion::tokenizeVariableOrFunctionName (Lorg/oppia/android/util/math/PeekableIterator;)Lorg/oppia/android/util/math/MathTokenizer$Companion$Token;
+FNF:86
+FNH:73
+BRDA:45,0,0,1
+BRDA:45,0,1,1
+BRDA:45,0,2,1
+BRDA:45,0,3,1
+BRDA:45,0,4,1
+BRDA:45,0,5,1
+BRDA:46,0,0,1
+BRDA:46,0,1,1
+BRDA:46,0,2,1
+BRDA:46,0,3,1
+BRDA:46,0,4,1
+BRDA:46,0,5,1
+BRDA:46,0,6,1
+BRDA:46,0,7,1
+BRDA:46,0,8,1
+BRDA:46,0,9,0
+BRDA:46,0,10,1
+BRDA:46,0,11,1
+BRDA:47,0,0,1
+BRDA:47,0,1,1
+BRDA:47,0,2,1
+BRDA:47,0,3,1
+BRDA:50,0,0,1
+BRDA:50,0,1,1
+BRDA:50,0,2,1
+BRDA:50,0,3,1
+BRDA:53,0,0,1
+BRDA:53,0,1,1
+BRDA:53,0,2,1
+BRDA:53,0,3,1
+BRDA:53,0,4,1
+BRDA:53,0,5,1
+BRDA:53,0,6,1
+BRDA:53,0,7,1
+BRDA:53,0,8,1
+BRDA:53,0,9,1
+BRDA:53,0,10,1
+BRDA:53,0,11,1
+BRDA:53,0,12,1
+BRDA:53,0,13,1
+BRDA:53,0,14,1
+BRDA:53,0,15,1
+BRDA:56,0,0,1
+BRDA:56,0,1,1
+BRDA:56,0,2,1
+BRDA:56,0,3,1
+BRDA:56,0,4,1
+BRDA:56,0,5,1
+BRDA:56,0,6,1
+BRDA:56,0,7,1
+BRDA:56,0,8,1
+BRDA:56,0,9,1
+BRDA:59,0,0,1
+BRDA:59,0,1,1
+BRDA:59,0,2,1
+BRDA:59,0,3,1
+BRDA:59,0,4,1
+BRDA:59,0,5,1
+BRDA:59,0,6,1
+BRDA:59,0,7,1
+BRDA:59,0,8,1
+BRDA:59,0,9,1
+BRDA:62,0,0,1
+BRDA:62,0,1,1
+BRDA:62,0,2,1
+BRDA:62,0,3,1
+BRDA:65,0,0,1
+BRDA:65,0,1,1
+BRDA:65,0,2,1
+BRDA:65,0,3,1
+BRDA:68,0,0,1
+BRDA:68,0,1,1
+BRDA:68,0,2,1
+BRDA:68,0,3,1
+BRDA:71,0,0,1
+BRDA:71,0,1,1
+BRDA:71,0,2,1
+BRDA:71,0,3,1
+BRDA:74,0,0,1
+BRDA:74,0,1,1
+BRDA:86,0,0,0
+BRDA:86,0,1,1
+BRDA:90,0,0,1
+BRDA:90,0,1,1
+BRDA:90,0,2,1
+BRDA:90,0,3,1
+BRDA:95,0,0,0
+BRDA:95,0,1,1
+BRDA:98,0,0,0
+BRDA:98,0,1,1
+BRDA:103,0,0,0
+BRDA:103,0,1,1
+BRDA:117,0,0,1
+BRDA:117,0,1,1
+BRDA:135,0,0,1
+BRDA:135,0,1,1
+BRDA:138,0,0,1
+BRDA:138,0,1,1
+BRDA:138,0,2,1
+BRDA:138,0,3,1
+BRDA:140,0,0,1
+BRDA:140,0,1,1
+BRDA:140,0,2,1
+BRDA:140,0,3,1
+BRDA:142,0,0,1
+BRDA:142,0,1,1
+BRDA:142,0,2,1
+BRDA:142,0,3,1
+BRDA:144,0,0,1
+BRDA:144,0,1,1
+BRDA:144,0,2,1
+BRDA:144,0,3,1
+BRDA:149,0,0,1
+BRDA:149,0,1,1
+BRDA:152,0,0,0
+BRDA:152,0,1,1
+BRDA:152,0,2,1
+BRDA:152,0,3,1
+BRDA:154,0,0,0
+BRDA:154,0,1,1
+BRDA:154,0,2,1
+BRDA:154,0,3,1
+BRDA:155,0,0,0
+BRDA:155,0,1,1
+BRDA:155,0,0,1
+BRDA:155,0,1,0
+BRDA:162,0,0,1
+BRDA:162,0,1,1
+BRDA:162,0,0,1
+BRDA:162,0,1,1
+BRDA:172,0,0,0
+BRDA:172,0,1,1
+BRDA:172,0,2,1
+BRDA:172,0,3,1
+BRDA:177,0,0,1
+BRDA:177,0,1,1
+BRDA:179,0,0,1
+BRDA:179,0,1,1
+BRDA:179,0,2,1
+BRDA:179,0,3,1
+BRDA:183,0,0,1
+BRDA:183,0,1,1
+BRDA:186,0,0,0
+BRDA:186,0,1,1
+BRDA:186,0,2,1
+BRDA:186,0,3,1
+BRDA:188,0,0,0
+BRDA:188,0,1,1
+BRDA:188,0,2,1
+BRDA:188,0,3,1
+BRDA:191,0,0,1
+BRDA:191,0,1,1
+BRDA:191,0,0,1
+BRDA:191,0,1,1
+BRDA:195,0,0,0
+BRDA:195,0,1,1
+BRDA:195,0,2,1
+BRDA:195,0,3,1
+BRDA:197,0,0,0
+BRDA:197,0,1,1
+BRDA:197,0,0,1
+BRDA:197,0,1,0
+BRDA:201,0,0,1
+BRDA:201,0,1,1
+BRDA:201,0,0,1
+BRDA:201,0,1,1
+BRDA:214,0,0,1
+BRDA:214,0,1,1
+BRDA:217,0,0,0
+BRDA:217,0,1,1
+BRDA:217,0,2,1
+BRDA:217,0,3,1
+BRDA:219,0,0,0
+BRDA:219,0,1,1
+BRDA:219,0,2,1
+BRDA:219,0,3,1
+BRDA:221,0,0,0
+BRDA:221,0,1,1
+BRDA:221,0,2,1
+BRDA:221,0,3,1
+BRDA:226,0,0,1
+BRDA:226,0,1,1
+BRDA:228,0,0,0
+BRDA:228,0,1,1
+BRDA:228,0,2,1
+BRDA:228,0,3,1
+BRDA:242,0,0,1
+BRDA:242,0,1,1
+BRDA:257,0,0,1
+BRDA:257,0,1,1
+BRDA:257,0,2,1
+BRDA:257,0,3,1
+BRDA:257,0,4,1
+BRDA:257,0,5,1
+BRDA:260,0,0,1
+BRDA:260,0,1,0
+BRDA:260,0,2,1
+BRDA:260,0,3,0
+BRDA:266,0,0,1
+BRDA:266,0,1,0
+BRDA:266,0,2,0
+BRDA:266,0,3,1
+BRDA:266,0,4,0
+BRDA:266,0,5,1
+BRDA:266,0,6,1
+BRDA:266,0,7,0
+BRDA:416,0,0,1
+BRDA:416,0,1,1
+BRDA:416,0,2,0
+BRDA:416,0,3,1
+BRDA:416,0,4,1
+BRDA:416,0,5,1
+BRDA:416,0,6,0
+BRDA:416,0,7,1
+BRDA:416,0,8,1
+BRDA:416,0,9,1
+BRDA:416,0,10,0
+BRDA:416,0,11,1
+BRDA:416,0,12,1
+BRDA:416,0,13,1
+BRDA:421,0,0,1
+BRDA:421,0,1,1
+BRDA:421,0,2,1
+BRDA:421,0,3,1
+BRDA:421,0,4,1
+BRDA:421,0,5,1
+BRDA:434,0,0,1
+BRDA:434,0,1,1
+BRDA:435,0,0,1
+BRDA:435,0,1,1
+BRF:230
+BRH:202
+DA:35,1
+DA:38,1
+DA:39,1
+DA:41,1
+DA:44,1
+DA:45,1
+DA:46,1
+DA:47,1
+DA:48,1
+DA:50,1
+DA:51,1
+DA:53,1
+DA:54,1
+DA:56,1
+DA:57,1
+DA:59,1
+DA:60,1
+DA:62,1
+DA:63,1
+DA:65,1
+DA:66,1
+DA:68,1
+DA:69,1
+DA:71,1
+DA:72,1
+DA:74,1
+DA:76,1
+DA:77,1
+DA:84,1
+DA:85,1
+DA:86,1
+DA:87,0
+DA:88,1
+DA:89,1
+DA:90,1
+DA:91,1
+DA:92,1
+DA:95,1
+DA:96,0
+DA:98,1
+DA:99,0
+DA:100,1
+DA:102,1
+DA:103,1
+DA:104,0
+DA:105,1
+DA:106,1
+DA:112,1
+DA:113,1
+DA:117,1
+DA:118,1
+DA:119,1
+DA:133,1
+DA:134,1
+DA:135,1
+DA:137,1
+DA:138,1
+DA:139,1
+DA:140,1
+DA:141,1
+DA:142,1
+DA:143,1
+DA:144,1
+DA:145,1
+DA:146,1
+DA:149,1
+DA:151,1
+DA:152,1
+DA:153,1
+DA:154,1
+DA:155,1
+DA:156,1
+DA:157,0
+DA:159,1
+DA:162,1
+DA:163,1
+DA:164,1
+DA:166,1
+DA:168,1
+DA:169,1
+DA:172,1
+DA:173,1
+DA:174,1
+DA:177,1
+DA:179,1
+DA:180,1
+DA:181,1
+DA:183,1
+DA:185,1
+DA:186,1
+DA:187,1
+DA:188,1
+DA:190,1
+DA:191,1
+DA:192,1
+DA:193,1
+DA:195,1
+DA:197,1
+DA:198,1
+DA:199,0
+DA:201,1
+DA:202,1
+DA:203,1
+DA:205,1
+DA:206,1
+DA:207,1
+DA:208,1
+DA:211,1
+DA:214,1
+DA:216,1
+DA:217,1
+DA:218,1
+DA:219,1
+DA:220,1
+DA:221,1
+DA:222,1
+DA:223,1
+DA:226,1
+DA:228,1
+DA:229,1
+DA:230,1
+DA:232,1
+DA:242,1
+DA:243,1
+DA:244,1
+DA:249,1
+DA:250,1
+DA:251,1
+DA:252,1
+DA:256,1
+DA:257,1
+DA:258,1
+DA:260,1
+DA:261,1
+DA:262,0
+DA:266,1
+DA:300,1
+DA:301,1
+DA:302,1
+DA:303,1
+DA:304,1
+DA:311,1
+DA:312,1
+DA:313,1
+DA:314,1
+DA:315,1
+DA:322,1
+DA:323,1
+DA:324,1
+DA:325,1
+DA:326,1
+DA:336,1
+DA:337,1
+DA:338,1
+DA:339,1
+DA:340,1
+DA:341,1
+DA:344,1
+DA:347,1
+DA:348,1
+DA:349,1
+DA:350,1
+DA:351,0
+DA:353,0
+DA:357,1
+DA:358,1
+DA:359,1
+DA:360,1
+DA:361,0
+DA:363,0
+DA:367,1
+DA:368,1
+DA:369,1
+DA:370,1
+DA:371,1
+DA:375,1
+DA:376,1
+DA:377,1
+DA:378,1
+DA:379,1
+DA:383,1
+DA:384,1
+DA:385,1
+DA:386,1
+DA:387,1
+DA:391,1
+DA:394,1
+DA:395,1
+DA:396,1
+DA:397,1
+DA:400,1
+DA:401,1
+DA:402,1
+DA:403,1
+DA:406,1
+DA:407,1
+DA:408,1
+DA:409,1
+DA:412,1
+DA:415,1
+DA:416,1
+DA:417,1
+DA:418,1
+DA:421,1
+DA:422,1
+DA:434,1
+DA:435,1
+DA:436,1
+DA:438,1
+LH:198
+LF:209
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/NumericExpressionEvaluator.kt
+FN:89,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathBinaryOperation;)Lorg/oppia/android/app/model/Real;
+FN:77,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Real;
+FN:108,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathFunctionCall;)Lorg/oppia/android/app/model/Real;
+FN:100,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathUnaryOperation;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathBinaryOperation;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathExpression;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathFunctionCall;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/NumericExpressionEvaluator$Companion::evaluate (Lorg/oppia/android/app/model/MathUnaryOperation;)Lorg/oppia/android/app/model/Real;
+FNF:4
+FNH:0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:108,0
+DA:109,0
+DA:112,0
+LH:0
+LF:22
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/PeekableIterator.kt
+FN:88,org/oppia/android/util/math/PeekableIterator$Companion::toPeekableIterator (Lkotlin/sequences/Sequence;)Lorg/oppia/android/util/math/PeekableIterator;
+FN:47,org/oppia/android/util/math/PeekableIterator$expectNextValue$1::invoke (Ljava/lang/Object;)Ljava/lang/Boolean;
+FN:17,org/oppia/android/util/math/PeekableIterator::<init> (Ljava/util/Iterator;)V
+FN:62,org/oppia/android/util/math/PeekableIterator::expectNextMatches (Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+FN:47,org/oppia/android/util/math/PeekableIterator::expectNextValue (Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+FN:73,org/oppia/android/util/math/PeekableIterator::getRetrievalCount ()I
+FN:23,org/oppia/android/util/math/PeekableIterator::hasNext ()Z
+FN:25,org/oppia/android/util/math/PeekableIterator::next ()Ljava/lang/Object;
+FN:35,org/oppia/android/util/math/PeekableIterator::peek ()Ljava/lang/Object;
+FN:75,org/oppia/android/util/math/PeekableIterator::retrieveNext ()Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/PeekableIterator$Companion::toPeekableIterator (Lkotlin/sequences/Sequence;)Lorg/oppia/android/util/math/PeekableIterator;
+FNDA:1,org/oppia/android/util/math/PeekableIterator$expectNextValue$1::invoke (Ljava/lang/Object;)Ljava/lang/Boolean;
+FNDA:1,org/oppia/android/util/math/PeekableIterator::<init> (Ljava/util/Iterator;)V
+FNDA:1,org/oppia/android/util/math/PeekableIterator::expectNextMatches (Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/PeekableIterator::expectNextValue (Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/PeekableIterator::getRetrievalCount ()I
+FNDA:1,org/oppia/android/util/math/PeekableIterator::hasNext ()Z
+FNDA:1,org/oppia/android/util/math/PeekableIterator::next ()Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/PeekableIterator::peek ()Ljava/lang/Object;
+FNDA:1,org/oppia/android/util/math/PeekableIterator::retrieveNext ()Ljava/lang/Object;
+FNF:10
+FNH:10
+BRDA:23,0,0,1
+BRDA:23,0,1,1
+BRDA:23,0,2,1
+BRDA:23,0,3,1
+BRDA:25,0,0,1
+BRDA:25,0,1,0
+BRDA:36,0,0,1
+BRDA:36,0,1,1
+BRDA:37,0,0,1
+BRDA:37,0,1,1
+BRDA:62,0,0,1
+BRDA:62,0,1,1
+BRDA:62,0,2,1
+BRDA:62,0,3,1
+BRDA:62,0,4,1
+BRDA:62,0,5,1
+BRF:16
+BRH:15
+DA:17,1
+DA:18,1
+DA:23,1
+DA:25,1
+DA:35,1
+DA:36,1
+DA:37,1
+DA:38,1
+DA:47,1
+DA:62,1
+DA:73,1
+DA:75,1
+DA:88,1
+LH:13
+LF:13
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/PolynomialExtensions.kt
+FN:16,org/oppia/android/util/math/PolynomialExtensionsKt$POLYNOMIAL_TERM_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FN:15,org/oppia/android/util/math/PolynomialExtensionsKt$POLYNOMIAL_VARIABLE_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FN:359,org/oppia/android/util/math/PolynomialExtensionsKt$times$3$1::apply (Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
+FN:10,org/oppia/android/util/math/PolynomialExtensionsKt::<clinit> ()V
+FN:278,org/oppia/android/util/math/PolynomialExtensionsKt::combineLikeTerms (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:243,org/oppia/android/util/math/PolynomialExtensionsKt::createConstantPolynomial (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Polynomial;
+FN:246,org/oppia/android/util/math/PolynomialExtensionsKt::createSingleTermPolynomial (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial;
+FN:503,org/oppia/android/util/math/PolynomialExtensionsKt::createTermComparator ()Ljava/util/Comparator;
+FN:513,org/oppia/android/util/math/PolynomialExtensionsKt::createVariableComparator ()Ljava/util/Comparator;
+FN:373,org/oppia/android/util/math/PolynomialExtensionsKt::div (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial$Term;
+FN:197,org/oppia/android/util/math/PolynomialExtensionsKt::div (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:427,org/oppia/android/util/math/PolynomialExtensionsKt::ensureAtLeastConstant (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:28,org/oppia/android/util/math/PolynomialExtensionsKt::getConstant (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Real;
+FN:437,org/oppia/android/util/math/PolynomialExtensionsKt::getDegree (Lorg/oppia/android/app/model/Polynomial;)Ljava/lang/Integer;
+FN:441,org/oppia/android/util/math/PolynomialExtensionsKt::getLeadingTerm (Lorg/oppia/android/app/model/Polynomial;Ljava/lang/String;)Lorg/oppia/android/app/model/Polynomial$Term;
+FN:439,org/oppia/android/util/math/PolynomialExtensionsKt::getLeadingTerm$default (Lorg/oppia/android/app/model/Polynomial;Ljava/lang/String;ILjava/lang/Object;)Lorg/oppia/android/app/model/Polynomial$Term;
+FN:13,org/oppia/android/util/math/PolynomialExtensionsKt::getONE_POLYNOMIAL ()Lorg/oppia/android/app/model/Polynomial;
+FN:16,org/oppia/android/util/math/PolynomialExtensionsKt::getPOLYNOMIAL_TERM_COMPARATOR ()Ljava/util/Comparator;
+FN:15,org/oppia/android/util/math/PolynomialExtensionsKt::getPOLYNOMIAL_VARIABLE_COMPARATOR ()Ljava/util/Comparator;
+FN:10,org/oppia/android/util/math/PolynomialExtensionsKt::getZERO_POLYNOMIAL ()Lorg/oppia/android/app/model/Polynomial;
+FN:454,org/oppia/android/util/math/PolynomialExtensionsKt::highestDegree (Lorg/oppia/android/app/model/Polynomial$Term;)I
+FN:452,org/oppia/android/util/math/PolynomialExtensionsKt::highestDegreeVariable (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial$Term$Variable;
+FN:301,org/oppia/android/util/math/PolynomialExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Polynomial$Term;)Z
+FN:117,org/oppia/android/util/math/PolynomialExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Z
+FN:433,org/oppia/android/util/math/PolynomialExtensionsKt::isApproximatelyZero (Lorg/oppia/android/app/model/Polynomial;)Z
+FN:19,org/oppia/android/util/math/PolynomialExtensionsKt::isConstant (Lorg/oppia/android/app/model/Polynomial;)Z
+FN:430,org/oppia/android/util/math/PolynomialExtensionsKt::isSingleTerm (Lorg/oppia/android/app/model/Polynomial;)Z
+FN:468,org/oppia/android/util/math/PolynomialExtensionsKt::maybeSimplifyRationalToInteger (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:162,org/oppia/android/util/math/PolynomialExtensionsKt::minus (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:148,org/oppia/android/util/math/PolynomialExtensionsKt::plus (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:398,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Polynomial$Term;
+FN:340,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;I)Lorg/oppia/android/app/model/Polynomial;
+FN:333,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Polynomial;
+FN:237,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:305,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Polynomial;
+FN:53,org/oppia/android/util/math/PolynomialExtensionsKt::removeUnnecessaryVariables (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:71,org/oppia/android/util/math/PolynomialExtensionsKt::simplifyRationals (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:95,org/oppia/android/util/math/PolynomialExtensionsKt::sort (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:349,org/oppia/android/util/math/PolynomialExtensionsKt::times (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial$Term;
+FN:174,org/oppia/android/util/math/PolynomialExtensionsKt::times (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FN:270,org/oppia/android/util/math/PolynomialExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Polynomial$Term$Variable;)Ljava/lang/String;
+FN:249,org/oppia/android/util/math/PolynomialExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Polynomial$Term;)Ljava/lang/String;
+FN:37,org/oppia/android/util/math/PolynomialExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Polynomial;)Ljava/lang/String;
+FN:457,org/oppia/android/util/math/PolynomialExtensionsKt::toPolynomial (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial;
+FN:461,org/oppia/android/util/math/PolynomialExtensionsKt::toPowerMap (Ljava/util/List;)Ljava/util/Map;
+FN:465,org/oppia/android/util/math/PolynomialExtensionsKt::toVariableList (Ljava/util/Map;)Ljava/util/List;
+FN:131,org/oppia/android/util/math/PolynomialExtensionsKt::unaryMinus (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt$POLYNOMIAL_TERM_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt$POLYNOMIAL_VARIABLE_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt$times$3$1::apply (Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::<clinit> ()V
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::combineLikeTerms (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::createConstantPolynomial (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::createSingleTermPolynomial (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::createTermComparator ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::createVariableComparator ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::div (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial$Term;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::div (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::ensureAtLeastConstant (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getConstant (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getDegree (Lorg/oppia/android/app/model/Polynomial;)Ljava/lang/Integer;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getLeadingTerm (Lorg/oppia/android/app/model/Polynomial;Ljava/lang/String;)Lorg/oppia/android/app/model/Polynomial$Term;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getLeadingTerm$default (Lorg/oppia/android/app/model/Polynomial;Ljava/lang/String;ILjava/lang/Object;)Lorg/oppia/android/app/model/Polynomial$Term;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getONE_POLYNOMIAL ()Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getPOLYNOMIAL_TERM_COMPARATOR ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getPOLYNOMIAL_VARIABLE_COMPARATOR ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::getZERO_POLYNOMIAL ()Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::highestDegree (Lorg/oppia/android/app/model/Polynomial$Term;)I
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::highestDegreeVariable (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial$Term$Variable;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Polynomial$Term;)Z
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Z
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::isApproximatelyZero (Lorg/oppia/android/app/model/Polynomial;)Z
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::isConstant (Lorg/oppia/android/app/model/Polynomial;)Z
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::isSingleTerm (Lorg/oppia/android/app/model/Polynomial;)Z
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::maybeSimplifyRationalToInteger (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::minus (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::plus (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Polynomial$Term;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;I)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::pow (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::removeUnnecessaryVariables (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::simplifyRationals (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::sort (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::times (Lorg/oppia/android/app/model/Polynomial$Term;Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial$Term;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::times (Lorg/oppia/android/app/model/Polynomial;Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Polynomial$Term$Variable;)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Polynomial$Term;)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Polynomial;)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::toPolynomial (Lorg/oppia/android/app/model/Polynomial$Term;)Lorg/oppia/android/app/model/Polynomial;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::toPowerMap (Ljava/util/List;)Ljava/util/Map;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::toVariableList (Ljava/util/Map;)Ljava/util/List;
+FNDA:0,org/oppia/android/util/math/PolynomialExtensionsKt::unaryMinus (Lorg/oppia/android/app/model/Polynomial;)Lorg/oppia/android/app/model/Polynomial;
+FNF:47
+FNH:0
+DA:10,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:19,0
+DA:28,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:59,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:79,0
+DA:95,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:107,0
+DA:117,0
+DA:120,0
+DA:121,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:162,0
+DA:174,0
+DA:175,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:197,0
+DA:198,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:219,0
+DA:237,0
+DA:238,0
+DA:239,0
+DA:243,0
+DA:246,0
+DA:249,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:258,0
+DA:259,0
+DA:263,0
+DA:266,0
+DA:270,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:301,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:309,0
+DA:312,0
+DA:315,0
+DA:319,0
+DA:321,0
+DA:322,0
+DA:327,0
+DA:328,0
+DA:333,0
+DA:334,0
+DA:335,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:344,0
+DA:349,0
+DA:352,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:361,0
+DA:362,0
+DA:363,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:369,0
+DA:373,0
+DA:374,0
+DA:378,0
+DA:381,0
+DA:382,0
+DA:386,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:398,0
+DA:399,0
+DA:404,0
+DA:406,0
+DA:407,0
+DA:408,0
+DA:410,0
+DA:411,0
+DA:412,0
+DA:413,0
+DA:414,0
+DA:415,0
+DA:416,0
+DA:419,0
+DA:427,0
+DA:430,0
+DA:433,0
+DA:437,0
+DA:439,0
+DA:441,0
+DA:442,0
+DA:443,0
+DA:444,0
+DA:445,0
+DA:446,0
+DA:447,0
+DA:448,0
+DA:452,0
+DA:454,0
+DA:457,0
+DA:461,0
+DA:465,0
+DA:468,0
+DA:469,0
+DA:470,0
+DA:471,0
+DA:472,0
+DA:473,0
+DA:474,0
+DA:475,0
+DA:478,0
+DA:479,0
+DA:480,0
+DA:481,0
+DA:482,0
+DA:483,0
+DA:485,0
+DA:490,0
+DA:491,0
+DA:503,0
+DA:504,0
+DA:505,0
+DA:506,0
+DA:513,0
+LH:0
+LF:191
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/RatioExtensions.kt
+FN:27,org/oppia/android/util/math/RatioExtensionsKt::gcd (II)I
+FN:22,org/oppia/android/util/math/RatioExtensionsKt::toAnswerString (Lorg/oppia/android/app/model/RatioExpression;)Ljava/lang/String;
+FN:9,org/oppia/android/util/math/RatioExtensionsKt::toSimplestForm (Lorg/oppia/android/app/model/RatioExpression;)Ljava/util/List;
+FNDA:0,org/oppia/android/util/math/RatioExtensionsKt::gcd (II)I
+FNDA:0,org/oppia/android/util/math/RatioExtensionsKt::toAnswerString (Lorg/oppia/android/app/model/RatioExpression;)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/RatioExtensionsKt::toSimplestForm (Lorg/oppia/android/app/model/RatioExpression;)Ljava/util/List;
+FNF:3
+FNH:0
+DA:9,0
+DA:10,0
+DA:12,0
+DA:13,0
+DA:22,0
+DA:27,0
+LH:0
+LF:6
+end_of_record
+SF:utility/src/main/java/org/oppia/android/util/math/RealExtensions.kt
+FN:19,org/oppia/android/util/math/RealExtensionsKt$ONE$2::invoke ()Lorg/oppia/android/app/model/Real;
+FN:24,org/oppia/android/util/math/RealExtensionsKt$ONE_HALF$2::invoke ()Lorg/oppia/android/app/model/Real;
+FN:37,org/oppia/android/util/math/RealExtensionsKt$REAL_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FN:14,org/oppia/android/util/math/RealExtensionsKt$ZERO$2::invoke ()Lorg/oppia/android/app/model/Real;
+FN:13,org/oppia/android/util/math/RealExtensionsKt::<clinit> ()V
+FN:437,org/oppia/android/util/math/RealExtensionsKt::abs (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:119,org/oppia/android/util/math/RealExtensionsKt::asWholeNumber (Lorg/oppia/android/app/model/Real;)Ljava/lang/Integer;
+FN:568,org/oppia/android/util/math/RealExtensionsKt::createIntegerReal (I)Lorg/oppia/android/app/model/Real;
+FN:564,org/oppia/android/util/math/RealExtensionsKt::createIrrationalReal (D)Lorg/oppia/android/app/model/Real;
+FN:560,org/oppia/android/util/math/RealExtensionsKt::createRationalReal (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Real;
+FN:291,org/oppia/android/util/math/RealExtensionsKt::div (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:439,org/oppia/android/util/math/RealExtensionsKt::divide (II)Lorg/oppia/android/app/model/Real;
+FN:18,org/oppia/android/util/math/RealExtensionsKt::getONE ()Lorg/oppia/android/app/model/Real;
+FN:23,org/oppia/android/util/math/RealExtensionsKt::getONE_HALF ()Lorg/oppia/android/app/model/Real;
+FN:37,org/oppia/android/util/math/RealExtensionsKt::getREAL_COMPARATOR ()Ljava/util/Comparator;
+FN:13,org/oppia/android/util/math/RealExtensionsKt::getZERO ()Lorg/oppia/android/app/model/Real;
+FN:89,org/oppia/android/util/math/RealExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Real;D)Z
+FN:81,org/oppia/android/util/math/RealExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Z
+FN:93,org/oppia/android/util/math/RealExtensionsKt::isApproximatelyZero (Lorg/oppia/android/app/model/Real;)Z
+FN:52,org/oppia/android/util/math/RealExtensionsKt::isInteger (Lorg/oppia/android/app/model/Real;)Z
+FN:69,org/oppia/android/util/math/RealExtensionsKt::isNegative (Lorg/oppia/android/app/model/Real;)Z
+FN:558,org/oppia/android/util/math/RealExtensionsKt::isOdd (I)Z
+FN:44,org/oppia/android/util/math/RealExtensionsKt::isRational (Lorg/oppia/android/app/model/Real;)Z
+FN:61,org/oppia/android/util/math/RealExtensionsKt::isWholeNumber (Lorg/oppia/android/app/model/Real;)Z
+FN:217,org/oppia/android/util/math/RealExtensionsKt::minus (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:184,org/oppia/android/util/math/RealExtensionsKt::plus (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:455,org/oppia/android/util/math/RealExtensionsKt::pow (II)Lorg/oppia/android/app/model/Real;
+FN:358,org/oppia/android/util/math/RealExtensionsKt::pow (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:501,org/oppia/android/util/math/RealExtensionsKt::root (II)Lorg/oppia/android/app/model/Real;
+FN:469,org/oppia/android/util/math/RealExtensionsKt::root (Lorg/oppia/android/app/model/Fraction;IZ)Lorg/oppia/android/app/model/Real;
+FN:424,org/oppia/android/util/math/RealExtensionsKt::sqrt (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:253,org/oppia/android/util/math/RealExtensionsKt::times (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FN:102,org/oppia/android/util/math/RealExtensionsKt::toDouble (Lorg/oppia/android/app/model/Real;)D
+FN:138,org/oppia/android/util/math/RealExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Real;)Ljava/lang/String;
+FN:153,org/oppia/android/util/math/RealExtensionsKt::unaryMinus (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt$ONE$2::invoke ()Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt$ONE_HALF$2::invoke ()Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt$REAL_COMPARATOR$2::invoke ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt$ZERO$2::invoke ()Lorg/oppia/android/app/model/Real;
+FNDA:1,org/oppia/android/util/math/RealExtensionsKt::<clinit> ()V
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::abs (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::asWholeNumber (Lorg/oppia/android/app/model/Real;)Ljava/lang/Integer;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::createIntegerReal (I)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::createIrrationalReal (D)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::createRationalReal (Lorg/oppia/android/app/model/Fraction;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::div (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::divide (II)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::getONE ()Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::getONE_HALF ()Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::getREAL_COMPARATOR ()Ljava/util/Comparator;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::getZERO ()Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Real;D)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isApproximatelyEqualTo (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isApproximatelyZero (Lorg/oppia/android/app/model/Real;)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isInteger (Lorg/oppia/android/app/model/Real;)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isNegative (Lorg/oppia/android/app/model/Real;)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isOdd (I)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isRational (Lorg/oppia/android/app/model/Real;)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::isWholeNumber (Lorg/oppia/android/app/model/Real;)Z
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::minus (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::plus (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::pow (II)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::pow (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::root (II)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::root (Lorg/oppia/android/app/model/Fraction;IZ)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::sqrt (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::times (Lorg/oppia/android/app/model/Real;Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNDA:1,org/oppia/android/util/math/RealExtensionsKt::toDouble (Lorg/oppia/android/app/model/Real;)D
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::toPlainText (Lorg/oppia/android/app/model/Real;)Ljava/lang/String;
+FNDA:0,org/oppia/android/util/math/RealExtensionsKt::unaryMinus (Lorg/oppia/android/app/model/Real;)Lorg/oppia/android/app/model/Real;
+FNF:35
+FNH:2
+BRDA:44,0,0,-
+BRDA:44,0,1,-
+BRDA:52,0,0,-
+BRDA:52,0,1,-
+BRDA:61,0,0,-
+BRDA:61,0,1,-
+BRDA:61,0,2,-
+BRDA:61,0,3,-
+BRDA:61,0,4,-
+BRDA:61,0,5,-
+BRDA:69,0,0,-
+BRDA:69,0,1,-
+BRDA:69,0,2,-
+BRDA:69,0,3,-
+BRDA:69,0,4,-
+BRDA:69,0,5,-
+BRDA:69,0,6,-
+BRDA:71,0,0,-
+BRDA:71,0,1,-
+BRDA:72,0,0,-
+BRDA:72,0,1,-
+BRDA:102,0,0,0
+BRDA:102,0,1,1
+BRDA:102,0,2,0
+BRDA:102,0,3,1
+BRDA:102,0,4,1
+BRDA:102,0,5,0
+BRDA:102,0,6,0
+BRDA:119,0,0,-
+BRDA:119,0,1,-
+BRDA:119,0,2,-
+BRDA:119,0,3,-
+BRDA:119,0,4,-
+BRDA:119,0,5,-
+BRDA:119,0,6,-
+BRDA:120,0,0,-
+BRDA:120,0,1,-
+BRDA:138,0,0,-
+BRDA:138,0,1,-
+BRDA:138,0,2,-
+BRDA:138,0,3,-
+BRDA:138,0,4,-
+BRDA:138,0,5,-
+BRDA:138,0,6,-
+BRDA:153,0,0,-
+BRDA:153,0,1,-
+BRDA:153,0,2,-
+BRDA:153,0,3,-
+BRDA:153,0,4,-
+BRDA:153,0,5,-
+BRDA:153,0,6,-
+BRDA:184,0,0,-
+BRDA:184,0,1,-
+BRDA:184,0,2,-
+BRDA:184,0,3,-
+BRDA:184,0,4,-
+BRDA:184,0,5,-
+BRDA:184,0,6,-
+BRDA:185,0,0,-
+BRDA:185,0,1,-
+BRDA:185,0,2,-
+BRDA:185,0,3,-
+BRDA:185,0,4,-
+BRDA:185,0,5,-
+BRDA:185,0,6,-
+BRDA:191,0,0,-
+BRDA:191,0,1,-
+BRDA:191,0,2,-
+BRDA:191,0,3,-
+BRDA:191,0,4,-
+BRDA:191,0,5,-
+BRDA:191,0,6,-
+BRDA:197,0,0,-
+BRDA:197,0,1,-
+BRDA:197,0,2,-
+BRDA:197,0,3,-
+BRDA:197,0,4,-
+BRDA:197,0,5,-
+BRDA:197,0,6,-
+BRDA:217,0,0,-
+BRDA:217,0,1,-
+BRDA:217,0,2,-
+BRDA:217,0,3,-
+BRDA:217,0,4,-
+BRDA:217,0,5,-
+BRDA:217,0,6,-
+BRDA:218,0,0,-
+BRDA:218,0,1,-
+BRDA:218,0,2,-
+BRDA:218,0,3,-
+BRDA:218,0,4,-
+BRDA:218,0,5,-
+BRDA:218,0,6,-
+BRDA:224,0,0,-
+BRDA:224,0,1,-
+BRDA:224,0,2,-
+BRDA:224,0,3,-
+BRDA:224,0,4,-
+BRDA:224,0,5,-
+BRDA:224,0,6,-
+BRDA:230,0,0,-
+BRDA:230,0,1,-
+BRDA:230,0,2,-
+BRDA:230,0,3,-
+BRDA:230,0,4,-
+BRDA:230,0,5,-
+BRDA:230,0,6,-
+BRDA:253,0,0,-
+BRDA:253,0,1,-
+BRDA:253,0,2,-
+BRDA:253,0,3,-
+BRDA:253,0,4,-
+BRDA:253,0,5,-
+BRDA:253,0,6,-
+BRDA:254,0,0,-
+BRDA:254,0,1,-
+BRDA:254,0,2,-
+BRDA:254,0,3,-
+BRDA:254,0,4,-
+BRDA:254,0,5,-
+BRDA:254,0,6,-
+BRDA:260,0,0,-
+BRDA:260,0,1,-
+BRDA:260,0,2,-
+BRDA:260,0,3,-
+BRDA:260,0,4,-
+BRDA:260,0,5,-
+BRDA:260,0,6,-
+BRDA:266,0,0,-
+BRDA:266,0,1,-
+BRDA:266,0,2,-
+BRDA:266,0,3,-
+BRDA:266,0,4,-
+BRDA:266,0,5,-
+BRDA:266,0,6,-
+BRDA:291,0,0,-
+BRDA:291,0,1,-
+BRDA:291,0,2,-
+BRDA:291,0,3,-
+BRDA:291,0,4,-
+BRDA:291,0,5,-
+BRDA:291,0,6,-
+BRDA:292,0,0,-
+BRDA:292,0,1,-
+BRDA:292,0,2,-
+BRDA:292,0,3,-
+BRDA:292,0,4,-
+BRDA:292,0,5,-
+BRDA:292,0,6,-
+BRDA:298,0,0,-
+BRDA:298,0,1,-
+BRDA:298,0,2,-
+BRDA:298,0,3,-
+BRDA:298,0,4,-
+BRDA:298,0,5,-
+BRDA:298,0,6,-
+BRDA:304,0,0,-
+BRDA:304,0,1,-
+BRDA:304,0,2,-
+BRDA:304,0,3,-
+BRDA:304,0,4,-
+BRDA:304,0,5,-
+BRDA:304,0,6,-
+BRDA:358,0,0,-
+BRDA:358,0,1,-
+BRDA:358,0,2,-
+BRDA:358,0,3,-
+BRDA:358,0,4,-
+BRDA:358,0,5,-
+BRDA:358,0,6,-
+BRDA:361,0,0,-
+BRDA:361,0,1,-
+BRDA:361,0,2,-
+BRDA:361,0,3,-
+BRDA:361,0,4,-
+BRDA:361,0,5,-
+BRDA:361,0,6,-
+BRDA:373,0,0,-
+BRDA:373,0,1,-
+BRDA:373,0,2,-
+BRDA:373,0,3,-
+BRDA:373,0,4,-
+BRDA:373,0,5,-
+BRDA:373,0,6,-
+BRDA:382,0,0,-
+BRDA:382,0,1,-
+BRDA:382,0,2,-
+BRDA:382,0,3,-
+BRDA:382,0,4,-
+BRDA:382,0,5,-
+BRDA:382,0,6,-
+BRDA:424,0,0,-
+BRDA:424,0,1,-
+BRDA:424,0,2,-
+BRDA:424,0,3,-
+BRDA:424,0,4,-
+BRDA:424,0,5,-
+BRDA:424,0,6,-
+BRDA:437,0,0,-
+BRDA:437,0,1,-
+BRDA:442,0,0,-
+BRDA:442,0,1,-
+BRDA:447,0,0,-
+BRDA:447,0,1,-
+BRDA:447,0,2,-
+BRDA:447,0,3,-
+BRDA:456,0,0,-
+BRDA:456,0,1,-
+BRDA:457,0,0,-
+BRDA:457,0,1,-
+BRDA:458,0,0,-
+BRDA:458,0,1,-
+BRDA:462,0,0,-
+BRDA:462,0,1,-
+BRDA:469,0,0,-
+BRDA:469,0,1,-
+BRDA:469,0,2,-
+BRDA:469,0,3,-
+BRDA:473,0,0,-
+BRDA:473,0,1,-
+BRDA:475,0,0,-
+BRDA:475,0,1,-
+BRDA:476,0,0,-
+BRDA:476,0,1,-
+BRDA:478,0,0,-
+BRDA:478,0,1,-
+BRDA:478,0,2,-
+BRDA:478,0,3,-
+BRDA:479,0,0,-
+BRDA:479,0,1,-
+BRDA:479,0,2,-
+BRDA:479,0,3,-
+BRDA:482,0,0,-
+BRDA:482,0,1,-
+BRDA:482,0,2,-
+BRDA:482,0,3,-
+BRDA:501,0,0,-
+BRDA:501,0,1,-
+BRDA:501,0,2,-
+BRDA:501,0,3,-
+BRDA:510,0,0,-
+BRDA:510,0,1,-
+BRDA:510,0,2,-
+BRDA:510,0,3,-
+BRDA:511,0,0,-
+BRDA:511,0,1,-
+BRDA:511,0,2,-
+BRDA:511,0,3,-
+BRDA:514,0,0,-
+BRDA:514,0,1,-
+BRDA:520,0,0,-
+BRDA:520,0,1,-
+BRDA:520,0,2,-
+BRDA:520,0,3,-
+BRDA:520,0,4,-
+BRDA:520,0,5,-
+BRDA:526,0,0,-
+BRDA:526,0,1,-
+BRDA:536,0,0,-
+BRDA:536,0,1,-
+BRDA:539,0,0,-
+BRDA:539,0,1,-
+BRDA:541,0,0,-
+BRDA:541,0,1,-
+BRDA:541,0,2,-
+BRDA:541,0,3,-
+BRDA:552,0,0,-
+BRDA:552,0,1,-
+BRDA:558,0,0,-
+BRDA:558,0,1,-
+BRF:270
+BRH:3
+DA:13,1
+DA:14,0
+DA:18,1
+DA:19,0
+DA:23,1
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:37,1
+DA:44,0
+DA:52,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:81,0
+DA:89,0
+DA:93,0
+DA:102,1
+DA:103,0
+DA:104,1
+DA:105,1
+DA:106,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:138,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:145,0
+DA:146,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:203,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:236,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:256,0
+DA:257,0
+DA:258,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:272,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:310,0
+DA:358,0
+DA:361,0
+DA:363,0
+DA:364,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:373,0
+DA:374,0
+DA:375,0
+DA:376,0
+DA:377,0
+DA:382,0
+DA:385,0
+DA:386,0
+DA:387,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:395,0
+DA:424,0
+DA:425,0
+DA:426,0
+DA:427,0
+DA:428,0
+DA:437,0
+DA:439,0
+DA:441,0
+DA:442,0
+DA:443,0
+DA:446,0
+DA:447,0
+DA:448,0
+DA:449,0
+DA:450,0
+DA:452,0
+DA:455,0
+DA:456,0
+DA:457,0
+DA:458,0
+DA:459,0
+DA:461,0
+DA:462,0
+DA:463,0
+DA:469,0
+DA:471,0
+DA:472,0
+DA:473,0
+DA:474,0
+DA:475,0
+DA:476,0
+DA:477,0
+DA:478,0
+DA:479,0
+DA:480,0
+DA:481,0
+DA:482,0
+DA:483,0
+DA:484,0
+DA:485,0
+DA:486,0
+DA:491,0
+DA:492,0
+DA:493,0
+DA:501,0
+DA:505,0
+DA:506,0
+DA:507,0
+DA:510,0
+DA:511,0
+DA:513,0
+DA:514,0
+DA:516,0
+DA:517,0
+DA:518,0
+DA:520,0
+DA:522,0
+DA:523,0
+DA:524,0
+DA:526,0
+DA:528,0
+DA:529,0
+DA:530,0
+DA:534,0
+DA:535,0
+DA:536,0
+DA:537,0
+DA:539,0
+DA:541,0
+DA:543,0
+DA:545,0
+DA:546,0
+DA:547,0
+DA:551,0
+DA:552,0
+DA:553,0
+DA:554,0
+DA:555,0
+DA:558,0
+DA:560,0
+DA:561,0
+DA:562,0
+DA:564,0
+DA:565,0
+DA:566,0
+DA:568,0
+DA:569,0
+DA:570,0
+LH:7
+LF:224
+end_of_record
