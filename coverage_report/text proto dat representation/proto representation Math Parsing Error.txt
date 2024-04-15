@@ -1,0 +1,189 @@
+bazel_test_target: "utility/src/main/java/org/oppia/android/util/math/MathParsingError.kt"
+covered_file {
+  file_path: "utility/src/main/java/org/oppia/android/util/math/MathParsingError.kt"
+  covered_line {
+    line_number: 20
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 27
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 37
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 38
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 39
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 40
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 51
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 52
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 53
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 54
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 64
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 65
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 66
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 67
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 76
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 87
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 97
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 98
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 99
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 100
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 107
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 124
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 125
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 126
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 127
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 138
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 139
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 140
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 141
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 148
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 155
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 162
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 169
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 178
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 185
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 195
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 202
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 217
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 227
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 234
+    coverage: FULL
+  }
+  covered_line {
+    line_number: 241
+    coverage: FULL
+  }
+  lines_found: 42
+  lines_hit: 42
+  function_coverage {
+    function_name: "org/oppia/android/util/math/MathParsingError$DisabledVariablesInUseError::<init>"
+    coverage: FULL
+  }
+  function_coverage {
+    function_name: "org/oppia/android/util/math/MathParsingError$DisabledVariablesInUseError::getVariables"
+    coverage: FULL
+  }
+  function_coverage {
+    function_name: "org/oppia/android/util/math/MathParsingError$EquationHasTooManyEqualsError::<init>"
+    coverage: FULL
+  }
+  function_coverage {
+    function_name: "org/oppia/android/util/math/MathParsingError$EquationIsMissingEqualsError::<init>"
+    coverage: FULL
+  }
+  // Additional function coverage entries omitted for brevity
+  functions_found: 41
+  functions_hit: 41
+}
