@@ -99,3 +99,41 @@ Coverage Report:
 The project primarily focuses on generating tests with migration to Bazel 6.2.0 for the test targets. Since the _test execution and coverage report generation are functioning properly_, **it shouldn't hinder the project workflow**. However, resolving the issue with `bazel build` could be crucial. Ensuring all environmental dependencies are met and staying updated with PR #4886 will be essential to address any hindrances in building Bazel targets.
 
 Currently, there are no hindrances to the project implementation, but efforts are directed towards resolving the `bazel build` issue. A prototype will be developed once the proposal is set to ensure smooth project implementation. During the Community Bonding Period (CBP), focus will be on getting `bazel build` working seamlessly (under mandatory conditions) and testing out a prototype so there are no unexpected hindrances in the actual coding phase.
+
+## Update as of 07/05/2024 1:13 am
+
+I was finally able to **sucessfully build the app with bazel-6.2.0**, the below are the steps undertaken:
+
+I analyzed the Android Bazel build environment setup CI workflow and then proceeded to create a new environment with JDK 11. I installed the necessary components, including
+
+- platform-tools
+- platforms;android-31
+- build-tools;32.0.0
+
+### Adjustment:
+One variation I made from the usual setup, which was used with Bazel 4.0.0, was to **omit the Oppia Bazel Android Tools configuration**.
+
+With this modified setup, I managed to advance through the build process without encountering any issues initially. However, I faced a setback when a memory regression issue triggered an "Out of memory" error in the JVM. This [issue has been known to occur with upgrades to Bazel 6.0.0](https://github.com/bazelbuild/bazel/issues/17665) and above.
+
+## OOM Error:
+To address this issue, I attempted to adjust my .wslconfig file to maximize memory allocation. Surprisingly, this approach did not yield the desired result. Ultimately, I decided to remove the .wslconfig file altogether, allowing the system to fully utilize available resources, which led to a successful build.
+
+**I have attached a screenshot showcasing the successful build process:**
+
+![Screenshot (989)](https://github.com/Rd4dev/opensource-oppia_android/assets/122200035/f5bad16e-856c-4c0c-8519-d820059fa53e)
+
+### Running Test Cases:
+Furthermore, in the pristine environment, I conducted the project's pivotal task of running the tests. All 157 tests passed with flying colors (not to mention I had a rather long suspenseful waiting period)!. Below, I have included screenshots and a recording for reference. 
+
+**Screen Recording:**
+
+
+https://github.com/Rd4dev/opensource-oppia_android/assets/122200035/5560c08c-7aea-44d5-a8f8-263e3c169eff
+
+
+**Screenshot:**
+![Screenshot (999)](https://github.com/Rd4dev/opensource-oppia_android/assets/122200035/4ee867a3-6dd2-4607-9120-c60f4f879865)
+
+
+### Discussions [#5371](https://github.com/oppia/oppia-android/discussions/5371)
+If necessary, I can revisit Bazel 4.0.0 and reattempt the tests to gain insight into any potential local missing dependencies, as time allows.
