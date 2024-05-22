@@ -39,34 +39,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
   - [ ] File issues for all cases where the code coverage tool misses or incorrectly counts code coverage for future work.
 
 
-## Milestones Table
-
-| ✅   | Task                      | Description of PR / action                                                       | Target date for PR creation | Target date for PR to be merged | Notes |
-|-----------|---------------------------|----------------------------------------------------------------------------------|-----------------------------|-----------------------------------| --------|
-|    | **MILESTONE 1**           |                                                                                   |                             |                                   |        |
-| ⬜  | Milestone 1.1             | Introduce RunCoverage.kt and CoverageRunner.kt to run code coverage for a specific bazel test target, interpret coverage result  | 10-06-2024                  | 15-06-2024                |    Additonal Notes  |
-| ⬜  | Sub-milestone 1.1 Task 1 | Implement proto processing                                                       | 15-06-2024                  | 20-06-2024                        |    |
-| ⬜  | Milestone 1.2             | Introduce CoverageReporter.kt to generate Coverage Report in desired format      | 25-06-2024                  | 28-06-2024                        |    |
-|    |**Internal Evaluation**| Internal evaluation - Milestone 1                                                | 28-06-2024                  |                                   |    |
-| ⬜  | Milestone 1.3 Task 1      | Update test exemption script                                                     | 05-07-2024                  | 08-07-2024                        |    |
-|    | **Buffer Time** |Buffer time for revision - Phase 1                                               | 01-07-2024                  | 08-07-2024                        |    |
-| ⬜  | Milestone 1.3 Task 2      | Update script to accept minimum coverage arg and add tests for Milestone 1       | 10-07-2024                  | 12-07-2024                        |    |
-|    | **Midpoint Evaluation** |Midpoint evaluation - Milestone 1                                                              | 08-07-2024                  | 12-07-2024                        |    |
-|--|---------|-------------|----------|----------|-------|
-|    | **MILESTONE 2**           |                                                                                   |                             |                                   |        |
-| ⬜  | Milestone 2.1             | Implement options for single target coverage analysis and report generation       | 20-07-2024                  | 23-07-2024                        | Additonal Notes  |
-| ⬜  | Milestone 2.2 Task 1      | Introduce new CI workflow for code coverage                                      | 04-06-2024                  | 07-06-2024                        |        |
-|    | **Internal Evaluation**   | Internal evaluation - Milestone 2                                                | 12-08-2024                  |                                   |        |
-| ⬜  | Milestone 2.2 Task 2      | Upload report as comment                                                         | 10-08-2024                  | 14-08-2024                        |        |
-|    | **Buffer Time**           | Buffer time for revision - Phase 2                                               | 15-08-2024                  | 23-08-2024                        |        |
-| ⬜  | Milestone 2.3 Task 1      | Fix/replace cancellation workflow                                                 | 19-08-2024                  | 22-08-2024                        |        |
-| ⬜  | Milestone 2.3 Task 2      | Add tests for Milestone 2                                                         | 22-08-2024                  | 24-08-2024                        |        |
-|    | **Final Evaluation**      | Final evaluation - Milestone 2                                                    | 19-07-2024                  | 26-07-2024                        |        |
-|--|---------|-------------|----------|----------|-------|
-| ⬜  | Milestone 2.4       | Create wiki page explaining code coverage usage, limitations, and test writing tips    | 19-08-2024                  | 22-08-2024                        |        |
-| ⬜  | Milestone 2.5       | File issues for missed coverage                                                         |                   |                        |        |
-
-
+# Milestone Table
 
 ## Milestone 1
 
@@ -75,7 +48,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 27-05-2024    | 30-05-2024    | 02-06-2024 |
+| 27-05-2024    | 28-05-2024    | 30-06-2024 |
 
 ### Tasks
 
@@ -83,66 +56,66 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ---- | -------- |
 | ⬜ Setup the workspace with bazel 6.2.0. | 27-05-2024 |
 | ⬜ Introduce RunCoverage script. | 27-05-2024 |
-| ⬜ Introduce CoverageRunner utility to call Bazel command. | 28-05-2024 |
-| ⬜ Add implementation in BazelClient to execute Bazel coverage command. | 30-05-2024 |
+| ⬜ Introduce CoverageRunner utility to call Bazel command. | 27-05-2024 |
+| ⬜ Add implementation in BazelClient to execute Bazel coverage command. | 28-05-2024 |
 
 ### PR 1.2
 **Interpreting the results and building proto for data processing.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 02-06-2024    | 09-06-2024    | 11-06-2024 |
+| 30-05-2024    | 04-06-2024    | 06-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Extract the coverage data path from the results. | 02-05-2024 |
-| ⬜ Introduce coverage.proto to store the produced coverage data. | 03-06-2024 |
-| ⬜ Parse the coverage data and store them to the proto. | 05-06-2024 |
-| ⬜ Isolate the coverage data to only contain the target coverage data. | 07-06-2024 |
-| ⬜ Include coverage data for any related tests - 'LocalTest'. | 09-06-2024 |
+| ⬜ Extract the coverage data path from the results. | 30-05-2024 |
+| ⬜ Introduce coverage.proto to store the produced coverage data. | 30-05-2024 |
+| ⬜ Parse the coverage data and store them to the proto. | 01-06-2024 |
+| ⬜ Isolate the coverage data to only contain the target coverage data. | 02-06-2024 |
+| ⬜ Include coverage data for any related tests - 'LocalTest'. | 04-06-2024 |
 
 ### PR 1.3
 **Introduce CoverageReporter utility and generate the code coverage report.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 11-06-2024    | 20-06-2024    | 22-06-2024 |
+| 06-06-2024    | 13-06-2024    | 15-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 12-06-2024 |
-| ⬜ Compute the coverage Ratio. | 13-06-2024 |
-| ⬜ Generate Markdown report with proto. | 16-05-2024 |
-| ⬜ Generate HTML report with proto. | 20-05-2024 |
+| ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 06-06-2024 |
+| ⬜ Compute the coverage Ratio. | 07-06-2024 |
+| ⬜ Generate Markdown report with proto. | 10-05-2024 |
+| ⬜ Generate HTML report with proto. | 13-05-2024 |
 
 ### PR 1.4
 **Updating the test exemption script.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 22-06-2024    | 26-06-2024    | 28-06-2024 |
+| 16-06-2024    | 18-06-2024    | 20-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Update the test exemption check script proto. | 24-06-2024 |
-| ⬜ Update the exemption_type data. | 26-06-2024 |
+| ⬜ Update the test exemption check script proto. | 16-06-2024 |
+| ⬜ Update the exemption_type data. | 18-06-2024 |
 
 ### Buffer Time
 **To work on reviews and code changes.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 28-06-2024    | 01-07-2024    | 03-07-2024 |
+| 20-06-2024    | 28-06-2024    | 30-06-2024 |
 
 ### Midpoint Evaluation
 **Code Reviews and Evaluations**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 04-07-2024    | 06-07-2024    | 08-07-2024 |
+| 01-07-2024    | 06-07-2024    | 08-07-2024 |
