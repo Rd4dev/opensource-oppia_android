@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathModel.kt Coverage Report</title>
+  <style>
+    /* Style for code lines */
+    .code-line {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    /* Style for line numbers */
+    .line-number {
+      width: 50px;
+      text-align: right;
+      padding-right: 10px;
+      font-weight: bold;
+    }
+
+    /* Style for the code text */
+    .code-text {
+      display: inline-block;
+    }
+
+    /* Style for covered lines */
+    .covered .code-text {
+      background-color: lightgreen;
+    }
+
+    /* Style for uncovered lines */
+    .uncovered .code-text {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <h1>MathModel.kt Coverage Report</h1>
+  <p>Lines Found: <span id="lines-found"></span></p>
+  <p>Lines Hit: <span id="lines-hit"></span></p>
+  <p>Coverage Ratio: <span id="coverage-ratio"></span>%</p>
+  <pre id="code-content"></pre>
+  <script>
+    // Function to fetch coverage data from JSON file
+    function getCoverageData() {
+      return fetch('coverage.json')
+        .then(response => response.json())
+        .catch(error => console.error(error));
+    }
+
+    // Function to highlight code lines based on coverage
+    function highlightLines(codeLines, coverageData) {
+      const coveredLines = coverageData.covered_file.covered_line;
+      const codeElement = document.getElementById('code-content');
+
+      for (let i = 0; i < codeLines.length; i++) {
+        const lineElement = document.createElement('div');
+        lineElement.classList.add('code-line');
+
+        const lineNumberElement = document.createElement('span');
+        lineNumberElement.classList.add('line-number');
+        lineNumberElement.textContent = (i + 1).toString(); // Add 1 for line numbering
+
+        const codeTextElement = document.createElement('span');
+        codeTextElement.classList.add('code-text');
+        codeTextElement.textContent = codeLines[i];
+
+        const isCovered = coveredLines.some(line => line.line_number === (i + 1));
+        lineElement.classList.add(isCovered ? 'covered' : 'uncovered');
+
+        lineElement.appendChild(lineNumberElement);
+        lineElement.appendChild(codeTextElement);
+        codeElement.appendChild(lineElement);
+      }
+    }
+
+    // Fetch code content and coverage data
+    fetch('MathModel.kt')
+      .then(response => response.text())
+      .then(codeContent => {
+        getCoverageData()
+          .then(coverageData => {
+            const codeLines = codeContent.split('\n');
+
+            document.getElementById('lines-found').textContent = coverageData.covered_file.lines_found;
+            document.getElementById('lines-hit').textContent = coverageData.covered_file.lines_hit;
+            document.getElementById('coverage-ratio').textContent = coverageData.CoverageRatio;
+
+            highlightLines(codeLines, coverageData);
+          });
+      })
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
