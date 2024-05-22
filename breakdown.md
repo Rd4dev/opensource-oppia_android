@@ -82,41 +82,56 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 11-06-2024    | 20-06-2024    | 22-06-2024 |
+| 11-06-2024    | 18-06-2024    | 20-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 12-06-2024 |
-| ⬜ Compute the coverage Ratio. | 13-06-2024 |
-| ⬜ Generate Markdown report with proto. | 16-05-2024 |
-| ⬜ Generate HTML report with proto. | 20-05-2024 |
+| ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 11-06-2024 |
+| ⬜ Compute the coverage Ratio. | 12-06-2024 |
+| ⬜ Generate Markdown report with proto. | 15-05-2024 |
+| ⬜ Generate HTML report with proto. | 18-05-2024 |
 
 ### PR 1.4
 **Updating the test exemption script.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 22-06-2024    | 26-06-2024    | 28-06-2024 |
+| 20-06-2024    | 24-06-2024    | 26-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Update the test exemption check script proto. | 24-06-2024 |
-| ⬜ Update the exemption_type data. | 26-06-2024 |
+| ⬜ Update the test exemption check script proto. | 22-06-2024 |
+| ⬜ Update the exemption_type data. | 24-06-2024 |
+
+### PR 1.5
+**Add tests for the M1 milestone.**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 26-06-2024    | 31-06-2024    | 02-06-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Add test cases for coverage runner. | 27-06-2024 |
+| ⬜ Add test cases for md generation. | 29-06-2024 |
+| ⬜ Add test cases for html generation. | 31-06-2024 |
 
 ### Buffer Time
 **To work on reviews and code changes.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 28-06-2024    | 01-07-2024    | 03-07-2024 |
+| 02-07-2024    | 04-07-2024    | 06-07-2024 |
 
 ### Midpoint Evaluation
 **Code Reviews and Evaluations**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 04-07-2024    | 06-07-2024    | 08-07-2024 |
+| 06-07-2024    | 06-07-2024    | 08-07-2024 |
