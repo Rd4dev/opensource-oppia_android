@@ -91,7 +91,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 30-05-2024    | 01-06-2024    | 03-06-2024 |
+| 30-05-2024    | 04-06-2024    | 06-06-2024 |
 
 ### Tasks
 
@@ -100,5 +100,49 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ⬜ Extract the coverage data path from the results. | 30-05-2024 |
 | ⬜ Introduce coverage.proto to store the produced coverage data. | 30-05-2024 |
 | ⬜ Parse the coverage data and store them to the proto. | 01-06-2024 |
+| ⬜ Isolate the coverage data to only contain the target coverage data. | 02-06-2024 |
+| ⬜ Include coverage data for any related tests - 'LocalTest'. | 04-06-2024 |
 
+### PR 1.3
+**Introduce CoverageReporter utility and generate the code coverage report.**
 
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 06-06-2024    | 13-06-2024    | 15-06-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 06-06-2024 |
+| ⬜ Compute the coverage Ratio. | 07-06-2024 |
+| ⬜ Generate Markdown report with proto. | 10-05-2024 |
+| ⬜ Generate HTML report with proto. | 13-05-2024 |
+
+### PR 1.4
+**Updating the test exemption script.**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 16-06-2024    | 18-06-2024    | 20-06-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Update the test exemption check script proto. | 16-06-2024 |
+| ⬜ Update the exemption_type data. | 18-06-2024 |
+
+### Buffer Time
+**To work on reviews and code changes.**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 20-06-2024    | 28-06-2024    | 30-06-2024 |
+
+### Midpoint Evaluation
+**Code Reviews and Evaluations**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 01-07-2024    | 06-07-2024    | 08-07-2024 |
