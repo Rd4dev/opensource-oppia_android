@@ -68,3 +68,37 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 
 
 
+## Milestone 1
+
+### PR 1.1
+**Introduce RunCoverage and CoverageRunner utilities to run code coverage for a specific bazel test target.**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 27-05-2024    | 28-05-2024    | 30-06-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Setup the workspace with bazel 6.2.0. | 27-05-2024 |
+| ⬜ Introduce RunCoverage script. | 27-05-2024 |
+| ⬜ Introduce CoverageRunner utility to call Bazel command. | 27-05-2024 |
+| ⬜ Add implementation in BazelClient to execute Bazel coverage command. | 28-05-2024 |
+
+### PR 1.2
+**Interpreting the results and building proto for data processing.**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 30-05-2024    | 01-06-2024    | 03-06-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Extract the coverage data path from the results. | 30-05-2024 |
+| ⬜ Introduce coverage.proto to store the produced coverage data. | 30-05-2024 |
+| ⬜ Parse the coverage data and store them to the proto. | 01-06-2024 |
+
+
