@@ -77,7 +77,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ⬜ Parse the coverage data and store them to the proto. | 05-06-2024 |
 | ⬜ Isolate the coverage data to only contain the target coverage data. | 07-06-2024 |
 | ⬜ Include coverage data for any related tests - 'LocalTest'. | 09-06-2024 |
-| ⬜ Add tests to validate acquired coverage data stored in the proto. | 14-06-2024 |
+| ⬜ Add tests to validate acquired coverage data stored in the proto. | 12-06-2024 |
 
 ### PR 1.3
 **Introduce CoverageReporter utility and generate the code coverage report.**
