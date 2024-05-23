@@ -92,9 +92,9 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ---- | -------- |
 | ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 12-06-2024 |
 | ⬜ Compute the coverage Ratio. | 13-06-2024 |
-| ⬜ Generate Markdown report with proto. | 16-05-2024 |
-| ⬜ Generate HTML report with proto. | 19-05-2024 |
-| ⬜ Add tests to validate the Markdown and HTML report generation and coverage ratios. | 23-05-2024 |
+| ⬜ Generate Markdown report with proto. | 16-06-2024 |
+| ⬜ Generate HTML report with proto. | 19-06-2024 |
+| ⬜ Add tests to validate the Markdown and HTML report generation and coverage ratios. | 23-06-2024 |
 
 ### PR 1.4
 **Updating the test exemption script.**
