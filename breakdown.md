@@ -5,17 +5,20 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
  ### Deliverable 1:
   - [ ] Setup the workspace with bazel 6.2.0 once the source code is updated and confirm the migration works seamlessly.
   - [ ] Introduce RunCoverage.kt and CoverageRunner.kt to run code coverage for a specific bazel test target, interpret coverage result.
+  - [ ] Add tests for execution Bazel coverage command.
   - [ ] Implement proto processing to interpret the results as proto for data processing.
+  - [ ] Add tests to validate stored coverage proto.
  
  ### Deliverable 2:
   - [ ] Introduce CoverageReporter.kt to generate Coverage Report in desired format.
   - - [ ] Markdown
   - - [ ] HTML
+  - [ ] Add tests to validate generated reports
    
 ### Deliverable 3:
   - [ ] Update test exemption script
   - [ ] Update script to accept minimum coverage arg
-  - [ ] Add tests for Milestone1
+  - [ ] Add tests for test exemption
 
 ## Milestone 2: 
  Integrate code coverage checking.
