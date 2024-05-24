@@ -79,7 +79,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ⬜ Update the exemption_type data. | 02-06-2024 |
 | ⬜ Add / Update tests for TestFileCheckTest scripts as required. | 04-06-2024 |
 
-### PR 1.2
+### PR 1.3
 **Update / Implement script to run code coverage for a specific file replacing test target argument.**
 
 | Starting Date | Creation Date | Merge Date |
@@ -95,7 +95,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ⬜ Include execution for related Test and LocalTest Targets. | 10-06-2024 |
 | ⬜ Add tests for execution of Bazel coverage command with filename. | 12-06-2024 |
 
-### PR 1.3
+### PR 1.4
 **Interpreting the results and building proto for data processing.**
 
 | Starting Date | Creation Date | Merge Date |
@@ -113,7 +113,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ⬜ Include coverage data to proto for any related tests - 'LocalTest'. | 17-06-2024 |
 | ⬜ Add tests to validate acquired coverage data stored in the proto. | 19-06-2024 |
 
-### PR 1.4
+### PR 1.5
 **Introduce CoverageReporter utility and generate the code coverage report.**
 
 | Starting Date | Creation Date | Merge Date |
