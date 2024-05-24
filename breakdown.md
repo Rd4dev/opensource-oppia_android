@@ -91,6 +91,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | Task | Due Date |
 | ---- | -------- |
 | ⬜ Update the script to take in a file as argument instead of target. | 04-05-2024 |
+| ⬜ Check with the exempted test file list to log the coverage ratio to 0%. | 04-06-2024 |
 | ⬜ Add functionality to map the file name to related test targets. | 07-06-2024 |
 | ⬜ Include execution for related Test and LocalTest Targets. | 10-06-2024 |
 | ⬜ Add tests for execution of Bazel coverage command with filename. | 12-06-2024 |
