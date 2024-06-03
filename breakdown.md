@@ -69,7 +69,7 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 01-06-2024    | 04-06-2024    | 06-06-2024 |
+| 01-06-2024    | 03-06-2024    | 05-06-2024 |
 
 ### Tasks
 
@@ -77,70 +77,70 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | ---- | -------- |
 | ⬜ Update the test exemption check script proto. | 01-06-2024 |
 | ⬜ Update the exemption_type data. | 02-06-2024 |
-| ⬜ Add / Update tests for TestFileCheckTest scripts as required. | 04-06-2024 |
+| ⬜ Add / Update tests for TestFileCheckTest scripts as required. | 03-06-2024 |
 
 ### PR 1.3
 **Update / Implement script to run code coverage for a specific file replacing test target argument.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 04-06-2024    | 12-06-2024    | 14-06-2024 |
+| 03-06-2024    | 08-06-2024    | 10-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Update the script to take in a file as argument instead of target. | 04-05-2024 |
-| ⬜ Check with the exempted test file list to log the coverage ratio to 0%. | 04-06-2024 |
-| ⬜ Add functionality to map the file name to related test targets. | 07-06-2024 |
-| ⬜ Include execution for related Test and LocalTest Targets. | 10-06-2024 |
-| ⬜ Add tests for execution of Bazel coverage command with filename. | 12-06-2024 |
+| ⬜ Update the script to take in a file as argument instead of target. | 03-05-2024 |
+| ⬜ Check with the exempted test file list to log the coverage ratio to 0%. | 03-06-2024 |
+| ⬜ Add functionality to map the file name to related test targets. | 04-06-2024 |
+| ⬜ Include execution for related Test and LocalTest Targets. | 06-06-2024 |
+| ⬜ Add tests for execution of Bazel coverage command with filename. | 08-06-2024 |
 
 ### PR 1.4
 **Interpreting the results and building proto for data processing.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 12-06-2024    | 19-06-2024    | 21-06-2024 |
+| 08-06-2024    | 13-06-2024    | 15-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Extract the coverage data path from the results. | 12-06-2024 |
-| ⬜ Introduce coverage.proto to store the produced coverage data. | 12-06-2024 |
-| ⬜ Parse the coverage data and store them to the proto. | 15-06-2024 |
-| ⬜ Isolate the coverage data to only contain the target coverage data. | 16-06-2024 |
-| ⬜ Include coverage data to proto for any related tests - 'LocalTest'. | 17-06-2024 |
-| ⬜ Add tests to validate acquired coverage data stored in the proto. | 19-06-2024 |
+| ⬜ Extract the coverage data path from the results. | 08-06-2024 |
+| ⬜ Introduce coverage.proto to store the produced coverage data. | 08-06-2024 |
+| ⬜ Parse the coverage data and store them to the proto. | 10-06-2024 |
+| ⬜ Isolate the coverage data to only contain the target coverage data. | 11-06-2024 |
+| ⬜ Include coverage data to proto for any related tests - 'LocalTest'. | 12-06-2024 |
+| ⬜ Add tests to validate acquired coverage data stored in the proto. | 13-06-2024 |
 
 ### PR 1.5
 **Introduce CoverageReporter utility and generate the code coverage report.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 19-06-2024    | 28-06-2024    | 30-06-2024 |
+| 13-06-2024    | 20-06-2024    | 22-06-2024 |
 
 ### Tasks
 
 | Task | Due Date |
 | ---- | -------- |
-| ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 19-06-2024 |
-| ⬜ Compute the coverage Ratio. | 19-06-2024 |
-| ⬜ Generate Markdown report with proto. | 22-06-2024 |
-| ⬜ Generate HTML report with proto. | 25-06-2024 |
-| ⬜ Add tests to validate the Markdown and HTML report generation and coverage ratios. | 28-06-2024 |
+| ⬜ Introduce CoverageReporter utility to generate the code coverage report. | 13-06-2024 |
+| ⬜ Compute the coverage Ratio. | 13-06-2024 |
+| ⬜ Generate Markdown report with proto. | 15-06-2024 |
+| ⬜ Generate HTML report with proto. | 18-06-2024 |
+| ⬜ Add tests to validate the Markdown and HTML report generation and coverage ratios. | 20-06-2024 |
 
 ### Buffer Time
 **To work on reviews and code changes.**
 
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
-| 30-06-2024    | 04-07-2024    | 08-07-2024 |
+| 22-06-2024    | 26-06-2024    | 28-07-2024 |
 
 ### Midpoint Evaluation
 **Code Reviews and Evaluations**
 
-| Creation Date | Merge Date |
-| ------------- | ---------- |
-| 08-07-2024    | 12-07-2024 |
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 28-06-2024    | 08-07-2024    | 12-07-2024 |
