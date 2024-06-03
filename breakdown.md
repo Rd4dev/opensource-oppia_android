@@ -144,3 +144,92 @@ Introduce a new script to compute a per-unit code coverage percentage for a sing
 | Starting Date | Creation Date | Merge Date |
 | ------------- | ------------- | ---------- |
 | 28-06-2024    | 08-07-2024    | 12-07-2024 |
+
+
+## Milestone 2
+
+### PR 2.1
+**Introduce new CI workflow for code coverage**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 12-07-2024    | 22-07-2024    | 24-07-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Introduce a new CI workflow that utilizes the coverage script. | 13-07-2024 |
+| ⬜ Configure it to run it with and without cache. | 15-07-2024 |
+| ⬜ Configure it to run as a series of buckets. | 18-07-2024 |
+| ⬜ Configure it to fail if it's below the threshold. | 20-07-2024 |
+| ⬜ Configure it to generate markdown reports. | 22-07-2024 |
+| ⬜ Analyze the new runs. | 22-07-2024 |
+
+### PR 2.2
+**Upload generated markdown report as comment**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 22-07-2024    | 26-07-2024    | 28-07-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Modify the workflow to upload markdown report as a comment. | 24-07-2024 |
+| ⬜ Test markdown report upload feature. | 25-07-2024 |
+| ⬜ Review and refine markdown upload implementation. | 26-07-2024 |
+
+### PR 2.3
+**Fix/replace cancellation workflow**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 26-07-2024    | 01-08-2024    | 03-08-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Identify issues with the current cancellation workflow. | 26-07-2024 |
+| ⬜ Execute and analyze cancellation with styfle - PR #2890. | 28-07-2024 |
+| ⬜ Develop replacement or fix for the cancellation workflow. | 30-08-2024 |
+| ⬜ Validate the new cancellation workflow. | 01-08-2024 |
+
+### PR 2.4
+**Create wiki page explaining code coverage usage, limitations, file issues for coverage gaps, and test writing tips**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 01-08-2024    | 04-08-2024    | 06-08-2024 |
+
+### Tasks
+
+| Task | Due Date |
+| ---- | -------- |
+| ⬜ Introduce new wiki page for "how to use the code coverage tool". | 01-08-2024 |
+| ⬜ Introduce new wiki page for "how to write tests with good behavioral coverage". | 02-08-2024 |
+| ⬜ Introduce new wiki page for "Limitations of the code coverage tool". | 03-08-2024 |
+| ⬜ File issues for missing / incorrect code coverages. | 04-08-2024 |
+
+### Buffer Time
+**To work on reviews and code changes.**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 06-08-2024    | 10-08-2024    | 12-08-2024 |
+
+### Final Evaluation
+**Code Reviews and Evaluations**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 12-08-2024    | 26-08-2024    | 03-09-2024 |
+
+### Spare Intervals
+**Spare intervals to fix any further issues.**
+
+| Starting Date | Creation Date | Merge Date |
+| ------------- | ------------- | ---------- |
+| 03-09-2024    | N/A           | End of GSoC period |
